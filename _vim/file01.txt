@@ -1,4 +1,4 @@
-Makefile
+../tesT02/Makefile
 Makefile.env
 BlinkLED_MSP430FR2433_03/Debug/driverlib/MSP430FR2xx_4xx/subdir_rules.mk
 BlinkLED_MSP430FR2433_03/Debug/driverlib/MSP430FR2xx_4xx/subdir_vars.mk
