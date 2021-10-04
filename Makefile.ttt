@@ -1,4 +1,30 @@
 
+
+srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
+srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
+
+srcC9:=$(shell echo $(srcC1) |sort -u)
+srcH9:=$(shell echo $(srcH1) |sort -u)
+
+dirC9:=$(shell dirname $(srcC9)|sort -u)
+dirH9:=$(shell dirname $(srcH9)|sort -u)
+
+
+
+define helpText2
+srcC9 -> $(srcC9)
+srcH9 -> $(srcH9)
+dirC9 -> $(dirC9)
+dirH9 -> $(dirH9)
+endef
+define helpText
+$(helpText2)
+
+endef
+export helpText
+
 all:
 
 ttt:
+	@echo; echo "$${helpText}" ; echo 
+
