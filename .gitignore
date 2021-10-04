@@ -3,3 +3,5 @@ cscope.out
 cscope.po.out
 tags
 /log.b4*m.txt
+/src0[0-9]/
+/h0[0-9]/
