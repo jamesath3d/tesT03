@@ -1,4 +1,6 @@
 
+msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
+msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
@@ -26,7 +28,8 @@ dirH9:=$(shell dirname $(srcH9)|sort -u)
 #Finished building target: "BlinkLED_MSP430FR2433_03.out"
 
 
-msp430gcc:="/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" 
+ifdef kkskajalaa
+msp430gcc:=$(msp430gcc931)
 msp430gccOP1=-Wl,-Map,"$@.map" -o"$@.out"
 msp430gccOP2:=-mhwmult=f5series -Og -g -gdwarf-3 -gstrict-dwarf -Wall -mmcu=msp430fr2433 
 msp430gccOP3:=-Wl,--gc-sections -L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
@@ -34,15 +37,20 @@ msp430gccOP4:=$(foreach aa1,$(dirH9), -I$(aa1))
 msp430gccOP5:=-I/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/
 msp430gccOP6:=$(srcC9)
 msp430gccOP8:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
-msp430cmd=$(msp430gcc) \
-	$(msp430gccOP1) \
-	$(msp430gccOP2) \
-	$(msp430gccOP3) \
-	$(msp430gccOP4) \
-	$(msp430gccOP5) \
-	$(msp430gccOP6) \
-	$(msp430gccOP8) \
+msp430cmd=$(msp430gcc) $(foreach aa1,1 2 3 4 5 6 7 8 9,$(msp430gccOP$(aa1)))
+endif
 
+msp430gccOP0:=$(msp430gcc931)
+msp430gccOP1:=-mhwmult=f5series -Og -g -gdwarf-3 -gstrict-dwarf -Wall -mmcu=msp430fr2433 
+msp430gccOP2 =-Wl,-Map,"$@.map" 
+msp430gccOP3:=-Wl,--gc-sections -L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
+msp430gccOP4:=-mmcu=msp430fr2433 
+msp430gccOP5 =-o"$@.out" 
+msp430gccOP6:=$(srcC9)
+msp430gccOP7:=-T"../msp430fr2433.ld"  
+msp430gccOP8:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
+msp430gccOP9:=$(foreach aa1,$(dirH9), -I$(aa1))
+msp430cmd=$(foreach aa1,0 1 2 3 4 5 6 7 8 9,$(msp430gccOP$(aa1)))
 
 Xmsp430cmd=$(msp430cmd)
 
