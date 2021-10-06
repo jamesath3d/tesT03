@@ -78,8 +78,6 @@ all:
 
 ttt:
 	@echo && echo "$${helpText}" && echo 
-	rm -fr ./$@/
-	mkdir ./$@/
 	$(msp430cmd)
 	$(msp430objcopyCMD)
 	$(msp430txtCMD)
