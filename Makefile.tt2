@@ -39,18 +39,21 @@ msp430gccOP0:=$(msp430gcc931)
 msp430gccOP1:=-mhwmult=f5series -mmcu=msp430fr2433 
 msp430gccOP2:=-Og -g -gdwarf-3 -gstrict-dwarf -Wall
 msp430gccOP3:=-MMD -MP
+msp430gccOP3:=-MD -MP
 msp430gccOP5:=-T"msp430fr2433.ld"  
 msp430gccOP6:=-Wl,--gc-sections 
 msp430gccOP7:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
-msp430gccOP8:=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
-msp430gccOP9:=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
-msp430gccOPa:=$(srcC9)
-msp430gccOPb:=$(foreach aa1,$(dirH9), -I$(aa1))
-msp430gccOPc:=-Wl,-Map,"$(tName).map"
-msp430gccOPd:=-o"$(tName).out" 
-msp430gccOPe:=-MF"$(tName).d_raw" 
-#msp430gccOP0+=-T"../msp430fr2433.ld"  
-msp430cmd=$(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOP$(aa1)))
+msp430gccOPa1:=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
+msp430gccOPa2:=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
+msp430gccOPa3:=$(srcC9)
+msp430gccOPa4:=$(foreach aa1,$(dirH9), -I$(aa1))
+msp430gccOPb1:=-Wl,-Map,"$(tName).map"
+msp430gccOPb2:=-o"$(tName).out" 
+msp430gccOPb3:=-MF"$(tName).d_raw" 
+msp430cmd=\
+		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOP$(aa1))) \
+		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOPa$(aa1))) \
+		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOPb$(aa1))) \
 
 Xmsp430cmd=$(msp430cmd)
 
