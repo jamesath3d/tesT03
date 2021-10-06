@@ -35,10 +35,13 @@ dirH9:=$(shell dirname $(srcH9)|sort -u)
 #-Wl,--start-group -lgcc -lc -Wl,--end-group 
 
 msp430gccOP0:=$(msp430gcc931)
-msp430gccOP1:=-mhwmult=f5series -Og -g -gdwarf-3 -gstrict-dwarf -Wall -mmcu=msp430fr2433 
+msp430gccOP1:=-mhwmult=f5series -mmcu=msp430fr2433 
+msp430gccOP2:=-Og -g -gdwarf-3 -gstrict-dwarf -Wall
+msp430gccOP3:=-MMD -MP
+msp430gccOP5:=-T"msp430fr2433.ld"  
 msp430gccOP6:=-Wl,--gc-sections 
 msp430gccOP7:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
-msp430gccOP8:=-I/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/
+msp430gccOP8:=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
 msp430gccOP9:=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
 msp430gccOPa:=$(srcC9)
 msp430gccOPb:=$(foreach aa1,$(dirH9), -I$(aa1))
