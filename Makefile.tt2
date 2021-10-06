@@ -96,7 +96,7 @@ export helpText
 
 all:
 
-ttt:
+tt2:
 	@echo && echo "$${helpText}" && echo 
 	$(Xmsp430cmd)
 	$(msp430objcopyCMD)
