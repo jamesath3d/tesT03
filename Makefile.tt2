@@ -99,6 +99,8 @@ all:
 
 tt2:
 	@echo && echo "$${helpText}" && echo 
+	rm -fr ./$@/
+	mkdir ./$@/
 	$(Xmsp430cmd)
 	$(msp430objcopyCMD)
 	$(msp430txtCMD)
