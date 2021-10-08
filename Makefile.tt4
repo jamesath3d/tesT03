@@ -13,12 +13,16 @@ msp430gcc93X:=/home/ti/msp430/local/bin/msp430-elf-gcc
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
+srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
+srcX1:=$(wildcard ../xh_$(tName)/*.h ../xh_$(tName)/*.hpp )
 
 srcC9:=$(shell echo $(srcC1) |sort -u)
 srcH9:=$(shell echo $(srcH1) |sort -u)
+srcX9:=$(shell echo $(srcX1) |sort -u)
 
 dirC9:=$(shell dirname $(srcC9)|sort -u)
 dirH9:=$(shell dirname $(srcH9)|sort -u)
+dirX9:=$(shell dirname $(srcX9)|sort -u)
 
 
 #Building file: "../_bit_set.c"
@@ -61,7 +65,7 @@ msp430gccOP8:=-Wl,--start-group -lgcc -lc -Wl,--end-group
 msp430gccOPa1Z=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
 msp430gccOPa2Z=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/" 
 msp430gccOPa3:=$(srcC9)
-msp430gccOPa4:=$(foreach aa1,$(dirH9), -I$(aa1))
+msp430gccOPa4:=$(foreach aa1,$(dirX9), -I$(aa1))$(foreach aa1,$(dirH9), -I$(aa1))
 msp430gccOPa5Z=-I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include/"
 msp430gccOPb1:=-Wl,-Map,"$(tName).map"
 msp430gccOPb2:=-o"$(tName).out" 
