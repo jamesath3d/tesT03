@@ -2,6 +2,14 @@
 tName:=tt3
 msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
 msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
+msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/build/gcc/gcc/cpp
+msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/build/gcc/gcc/cc1
+msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/build/gcc/gcc/cc1plus
+msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/build/gcc/gcc/xgcc
+msp430gcc93X:=$(msp430gcc931)
+msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/install/usr/local/bin/msp430-elf-gcc
+msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11.001.before.patch.built.bin/msp430-elf-gcc
+msp430gcc93X:=/home/ti/msp430/local/bin/msp430-elf-gcc
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
@@ -36,17 +44,23 @@ dirH9:=$(shell dirname $(srcH9)|sort -u)
 #-Wl,--start-group -lgcc -lc -Wl,--end-group 
 
 msp430gccOP0:=$(msp430gcc931)
-msp430gccOP1:=-mhwmult=f5series -mmcu=msp430fr2433 
-msp430gccOP2:=-Og -g -gdwarf-3 -gstrict-dwarf -Wall
-msp430gccOP3:=-MMD -MP
-msp430gccOP3:=-MD -MP
-msp430gccOP5:=-T"msp430fr2433.ld"  
-msp430gccOP6:=-Wl,--gc-sections 
-msp430gccOP7:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
+msp430gccOP0:=$(msp430gcc463)
+msp430gccOP0:=$(msp430gcc93X)
+msp430gccOP1X=-mhwmult=f5series 
+msp430gccOP2:=-mmcu=msp430fr2433 
+msp430gccOP3:=-Og 
+msp430gccOP3:=-O1 
+msp430gccOP4:=-g -gdwarf-3 -gstrict-dwarf -Wall
+msp430gccOP5:=-MMD -MP
+msp430gccOP5:=-MD -MP
+msp430gccOP6:=-T"msp430fr2433.ld"  
+msp430gccOP7:=-Wl,--gc-sections 
+msp430gccOP8:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
 msp430gccOPa1:=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
-msp430gccOPa2:=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
+msp430gccOPa2:=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/" 
 msp430gccOPa3:=$(srcC9)
 msp430gccOPa4:=$(foreach aa1,$(dirH9), -I$(aa1))
+msp430gccOPa5:=-I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include/"
 msp430gccOPb1:=-Wl,-Map,"$(tName).map"
 msp430gccOPb2:=-o"$(tName).out" 
 msp430gccOPb3:=-MF"$(tName).d_raw" 
