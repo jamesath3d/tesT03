@@ -45,8 +45,9 @@ dirH9:=$(shell dirname $(srcH9)|sort -u)
 
 msp430gccOP0:=$(msp430gcc931)
 msp430gccOP0:=$(msp430gcc463)
-msp430gccOP0:=$(msp430gcc93X)
+msp430gccOPYY=$(msp430gcc93X)
 msp430gccOPXX=-mhwmult=f5series 
+msp430gccOP1Z=-include stdint.h
 msp430gccOP2:=-mmcu=msp430fr2433 
 msp430gccOP3:=-Og 
 msp430gccOP3:=-O1 
