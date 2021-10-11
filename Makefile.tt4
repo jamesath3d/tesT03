@@ -1,5 +1,6 @@
 
 tName:=tt4
+$(tName)_txt:=using gcc 4.6.3 from debian apt tree
 msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
 msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
 msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/build/gcc/gcc/cpp
@@ -65,15 +66,16 @@ msp430gccOP8:=-Wl,--start-group -lgcc -lc -Wl,--end-group
 msp430gccOPa1Z=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
 msp430gccOPa2Z=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/" 
 msp430gccOPa3:=$(srcC9)
-msp430gccOPa4:=$(foreach aa1,$(dirX9), -I$(aa1))$(foreach aa1,$(dirH9), -I$(aa1))
+msp430gccOPa4:=$(foreach aa1,$(dirX9) $(dirH9), -I$(aa1))
 msp430gccOPa5Z=-I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include/"
 msp430gccOPb1:=-Wl,-Map,"$(tName).map"
 msp430gccOPb2:=-o"$(tName).out" 
 msp430gccOPb3:=-MF"$(tName).d_raw" 
+msp430gccOPb4:=-DTEST01
 msp430cmd=\
-		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOP$(aa1))) \
-		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOPa$(aa1))) \
-		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,$(msp430gccOPb$(aa1))) \
+		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,\
+		  $(foreach bb1,msp430gccOP msp430gccOPa msp430gccOPb,\
+		  $($(bb1)$(aa1))))
 
 Xmsp430cmd=$(msp430cmd)
 

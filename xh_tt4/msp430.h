@@ -809,7 +809,9 @@
 #elif defined(__MSP430F6736__)
 #include <msp430f6736.h>   /* Genericizable */
 #elif defined(__MSP430FR2433__)
+#if defined(TEST02)
 #include <msp430fr2433.h>   /* Genericizable */
+#endif
 
 #else
 #warning Unable to identify and include MCU header, use -mmcu=MCU

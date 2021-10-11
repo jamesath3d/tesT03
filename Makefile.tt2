@@ -1,5 +1,6 @@
 
 tName:=tt2
+$(tName)_txt:=using origin gcc 9.3.1 from ti
 msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
 msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
 

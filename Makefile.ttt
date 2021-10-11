@@ -1,5 +1,7 @@
 
 
+tName:=ttt
+$(tName)_txt:=using origin gcc 9.3.1 from ti
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
 
@@ -76,7 +78,7 @@ export helpText
 
 all:
 
-ttt:
+$(tName):
 	@echo && echo "$${helpText}" && echo 
 	$(msp430cmd)
 	$(msp430objcopyCMD)
