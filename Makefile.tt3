@@ -9,7 +9,8 @@ msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-ful
 msp430gcc93X:=$(msp430gcc931)
 msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11/msp430-gcc-9.3.1.11-source-full/install/usr/local/bin/msp430-elf-gcc
 msp430gcc93X:=/home/ti/msp430/msp430-gcc-9.3.1.11.001.before.patch.built.bin/msp430-elf-gcc
-msp430gcc93X:=/home/ti/msp430/local/bin/msp430-elf-gcc
+msp430gcc93X:=/home/ti/msp430-x64/local/msp430-elf-gcc
+msp430gcc93X:=/home/m430/x64/local/bin/msp430-elf-gcc
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )

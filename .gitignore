@@ -9,3 +9,4 @@ tags
 [0-9a-z].txt
 /ttt/
 /tt[0-9]/
+nohup.out
