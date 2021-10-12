@@ -63,6 +63,7 @@ msp430gccOP5:=-MD -MP
 msp430gccOP6:=-T"msp430fr2433.ld"  
 msp430gccOP7:=-Wl,--gc-sections 
 msp430gccOP8:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
+msp430gccOP9:=-D$(tName)
 msp430gccOPa1Z=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
 msp430gccOPa2Z=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/" 
 msp430gccOPa3:=$(srcC9)
@@ -75,7 +76,8 @@ msp430gccOPb4:=-DTEST01
 msp430cmd=\
 		  $(foreach aa1,0 1 2 3 4 5 6 7 8 9 a b c d e f,\
 		  $(foreach bb1,msp430gccOP msp430gccOPa msp430gccOPb,\
-		  $($(bb1)$(aa1))))
+		  $($(bb1)$(aa1)))) \
+		  -D$(tName)
 
 Xmsp430cmd=$(msp430cmd)
 
