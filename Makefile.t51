@@ -1,6 +1,6 @@
 
 
-tName:=ttt
+tName:=tt1
 $(tName)_txt:=using origin gcc 9.3.1 from ti
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
