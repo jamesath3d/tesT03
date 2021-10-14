@@ -1,8 +1,9 @@
 
 tName:=tt2
-$(tName)_txt:=using origin gcc 9.3.1 from ti
+$(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
 msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
 msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
+msp430gcc93X:=/home/m430/x64/local/bin/msp430-elf-gcc
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
@@ -37,6 +38,7 @@ dirH9:=$(shell dirname $(srcH9)|sort -u)
 #-Wl,--start-group -lgcc -lc -Wl,--end-group 
 
 msp430gccOP0:=$(msp430gcc931)
+msp430gccOP0:=$(msp430gcc93X)
 msp430gccOP1:=-mhwmult=f5series -mmcu=msp430fr2433 
 msp430gccOP2:=-Og -g -gdwarf-3 -gstrict-dwarf -Wall
 msp430gccOP3:=-MMD -MP
