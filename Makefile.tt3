@@ -47,9 +47,24 @@ msp430gccOP2:=-O3 -g -gdwarf-3 -gstrict-dwarf -Wall
 msp430gccOP3:=-MMD -MP
 msp430gccOP3:=-MD -MP
 msp430gccOP5X=-T"msp430fr2433.ld"  
-msp430gccOP5:=-T"msp430.x"
+msp430gccOP5:=-T"msp430.x" -nostdlib -nostdinc -nodefaultlibs -nostartfiles # -nostdinc++
 msp430gccOP6:=-Wl,--gc-sections 
-msp430gccOP7:=-Wl,--start-group -lgcc -lc -Wl,--end-group 
+msp430gccOP7:=-Wl,-nostdlib
+msp430gccOP7X=-Wl,--start-group -lgcc -lc -Wl,--end-group 
+msp430gccOP8X=-L/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/lib/gcc/msp430/4.6.3/
+msp430gccOP9X=-L/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/lib/gcc/msp430/4.6.3/mcpu-430x/
+msp430gccOP9Y=-Wl,--start-group \
+	/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/lib/gcc/msp430/4.6.3/mcpu-430x/libgcc.a \
+	/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/msp430/lib/mcpu-430x/libc.a \
+	-Wl,--end-group
+msp430gccOP9Y=-Wl,--start-group \
+	/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/lib/gcc/msp430/4.6.3/libgcc.a \
+	/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/msp430/lib/libc.a \
+	-Wl,--end-group
+msp430gccOP9Y=-Wl,--start-group \
+	/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/lib/gcc/msp430/4.6.3/mmpy-16/libgcc.a \
+	/home/ti/ti/energia-1.8.10E23/hardware/tools/msp430/msp430/lib/mmpy-16/libc.a \
+	-Wl,--end-group
 msp430gccOPa1X=-I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/"
 msp430gccOPa2X=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
 msp430gccOPa3:=$(srcC9)
