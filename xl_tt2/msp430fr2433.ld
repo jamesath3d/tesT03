@@ -1,1 +1,1 @@
-/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc/msp430fr2433.ld
+x_msp430fr2433__ccs.ld
