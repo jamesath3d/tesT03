@@ -71,6 +71,7 @@ Xmsp430cmd=$(msp430cmd)
 #"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded  "BlinkLED_MSP430FR2433_03.out"  "BlinkLED_MSP430FR2433_03.hex"
 #Finished building secondary target: "BlinkLED_MSP430FR2433_03.hex"
 msp430objcopy1:="/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy"
+msp430objcopy1:=/usr/bin/msp430-objcopy
 msp430objcopy3:=--strip-all --strip-debug --strip-unneeded
 msp430objcopyCMD=     \
 	$(msp430objcopy1) \
