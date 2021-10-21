@@ -2,15 +2,6 @@
 tName:=tt2
 $(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
 
-uname_p:=$(shell uname -p)
-ifeq ($(uname_p),x86_64)
-msp430gcc93X:=/home/m430/x64/local/bin/msp430-elf-gcc
-disable_hex430:=
-else
-msp430gcc93X:=/home/m430/a64/local/bin/msp430-elf-gcc
-disable_hex430:=echo disable
-endif
-
 msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
 msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
 
@@ -79,17 +70,38 @@ Xmsp430cmd=$(msp430cmd)
 #Invoking: GNU Objcopy Utility
 #"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded  "BlinkLED_MSP430FR2433_03.out.elf"  "BlinkLED_MSP430FR2433_03.ss.elf"
 #Finished building secondary target: "BlinkLED_MSP430FR2433_03.ss.elf"
-ifeq ($(uname_p),x86_64)
-msp430objcopy1:="/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy"
-else
-msp430objcopy1:=/usr/bin/msp430-objcopy
-endif
+msp430objcopy1:=$(msp430objcopy)
 msp430objcopy3:=--strip-all --strip-debug --strip-unneeded
 msp430objcopyCMD=     \
-	$(msp430objcopy1) \
-	$(msp430objcopy3) \
-	$(tName).out.elf  \
-	$(tName).ss.elf
+					  $(msp430objcopy1) \
+					  $(msp430objcopy3) \
+					  $(tName).out.elf  \
+					  $(tName).ss.elf
+
+msp430objcopyIhex1=   \
+					  $(msp430objcopy) \
+					  -Oihex \
+					  $(tName).out.elf  \
+					  $(tName).out.elf.ihex
+msp430objcopyIhex2=   \
+					  $(msp430objcopy) \
+					  -Oihex \
+					  $(tName).ss.elf  \
+					  $(tName).ss.elf.ihex
+msp430srec_txt1=     \
+					 $(msp430srec) \
+					 $(tName).out.elf.ihex \
+					 -Intel \
+					 -o \
+					 $(tName).out.elf.ihex.titxt \
+					 -Texas_Instruments_TeXT
+msp430srec_txt2=     \
+					 $(msp430srec) \
+					 $(tName).ss.elf.ihex \
+					 -Intel \
+					 -o \
+					 $(tName).ss.elf.ihex.titxt \
+					 -Texas_Instruments_TeXT
 
 
 #Building secondary target: "BlinkLED_MSP430FR2433_03.txt"
@@ -122,6 +134,10 @@ $(tName):
 	@echo && echo "$${helpText}" && echo 
 	$(Xmsp430cmd)
 	$(msp430objcopyCMD)
+	$(msp430objcopyIhex1)
+	$(msp430objcopyIhex2)
+	$(msp430srec_txt1)
+	$(msp430srec_txt2)
 	$(msp430txtCMD)
 	@echo && ls -l $${PWD}/$(tName).* && echo
 
