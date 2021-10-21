@@ -1,1 +1,1 @@
-/home/dyn/tesT02/Makefile
+../tesT02/Makefile
