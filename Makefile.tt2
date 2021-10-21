@@ -1,14 +1,18 @@
 
 tName:=tt2
 $(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
-msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
-msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
+
 uname_p:=$(shell uname -p)
 ifeq ($(uname_p),x86_64)
 msp430gcc93X:=/home/m430/x64/local/bin/msp430-elf-gcc
+disable_hex430:=
 else
 msp430gcc93X:=/home/m430/a64/local/bin/msp430-elf-gcc
+disable_hex430:=echo disable
 endif
+
+msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
+msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )

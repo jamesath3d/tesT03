@@ -1,9 +1,20 @@
 
 tName:=tt3
 $(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
+
+
+uname_p:=$(shell uname -p)
+ifeq ($(uname_p),x86_64)
+msp430gcc93X:=/home/m430/x64/local/bin/msp430-elf-gcc
+disable_hex430:=
+else
+msp430gcc93X:=/home/m430/a64/local/bin/msp430-elf-gcc
+disable_hex430:=echo disable
+endif
+
+
 #msp430gcc931:=/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1
 msp430gcc463:=/usr/bin/msp430-gcc-4.6.3
-msp430gcc93X:=/home/m430/x64/local/bin/msp430-elf-gcc
 
 srcC1:=$(wildcard ../src??/*.c ../src??/*.cpp)
 srcH1:=$(wildcard ../h??/*.h   ../h??/*.hpp  )
@@ -106,6 +117,11 @@ Xmsp430cmd=$(msp430cmd)
 #"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded  "BlinkLED_MSP430FR2433_03.out.elf"  "BlinkLED_MSP430FR2433_03.ss.elf"
 #Finished building secondary target: "BlinkLED_MSP430FR2433_03.ss.elf"
 msp430objcopy1:="/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy"
+ifeq ($(uname_p),x86_64)
+msp430objcopy1:="/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy"
+else
+msp430objcopy1:=/usr/bin/msp430-objcopy
+endif
 msp430objcopy3:=--strip-all --strip-debug --strip-unneeded
 msp430objcopyCMD=     \
 	$(msp430objcopy1) \
