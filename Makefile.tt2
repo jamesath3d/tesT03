@@ -93,14 +93,14 @@ msp430srec_txt1=     \
 					 $(tName).out.elf.ihex \
 					 -Intel \
 					 -o \
-					 $(tName).out.elf.ihex.titxt \
+					 $(tName).out.elf.ihex.ti.txt \
 					 -Texas_Instruments_TeXT
 msp430srec_txt2=     \
 					 $(msp430srec) \
 					 $(tName).ss.elf.ihex \
 					 -Intel \
 					 -o \
-					 $(tName).ss.elf.ihex.titxt \
+					 $(tName).ss.elf.ihex.ti.txt \
 					 -Texas_Instruments_TeXT
 
 
