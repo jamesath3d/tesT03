@@ -1,6 +1,6 @@
 
 tName:=tt5
-tHelp:= testing 83838388111
+tHelp:= testing 83838388111 trying to make the old H3D's prog being run in ARM
 
 include ../Makefile.msp430v001
 
