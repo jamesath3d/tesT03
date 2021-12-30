@@ -1,7 +1,6 @@
 
-
+tHelp:= using gcc9.3.1 from ti     , with ccs\'s library
 tName:=tt1
-$(tName)_txt:=using origin gcc 9.3.1 from ti
 
 uname_p:=$(shell uname -p)
 ifeq ($(uname_p),x86_64)

@@ -1,6 +1,6 @@
 
 tName:=tt5
-$(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
+tHelp:= testing 83838388111
 
 include ../Makefile.msp430v001
 

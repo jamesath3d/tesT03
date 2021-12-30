@@ -1,6 +1,6 @@
 
 tName:=tt3
-$(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
+tHelp:= using gcc4.6.3 from debian, energia-1.8.10E23\'s lib
 
 
 uname_p:=$(shell uname -p)

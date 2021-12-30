@@ -1,6 +1,6 @@
 
+tHelp:= using gcc9.3.1 from src x64, energia-1.8.10E23\'s lib
 tName:=tt4
-$(tName)_txt:=using gcc 9.3.1 build from source for i386-x64
 
 uname_p:=$(shell uname -p)
 ifeq ($(uname_p),x86_64)
