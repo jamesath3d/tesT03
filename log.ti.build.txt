@@ -1,0 +1,874 @@
+make -C BlinkLED_MSP430FR2433_03/Debug__GNU/ clean
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__GNU'
+rm -fr  "BlinkLED_MSP430FR2433_03.hex"  "BlinkLED_MSP430FR2433_03.out" 
+rm -fr "_bit_set.o" "_cable_tester_mainloop_once.o" "_delay_1ms.o" "_delay_1s.o" "_delay_1us.o" "_i2c01_clk_to_0.o" "_i2c01_clk_to_1.o" "_i2c01_init.o" "_i2c01_sda_to_0.o" "_i2c01_sda_to_1.o" "_i2c_expander01_check_sda1.o" "_i2c_expander01_r1w0_6.o" "_i2c_expander01_read6.o" "_i2c_expander01_reset.o" "_i2c_expander01_testLoop.o" "_led_green_set_output.o" "_led_green_toggle.o" "_led_red_set_output.o" "_led_red_toggle.o" "_test001.o" "_test002.o" "_test003.o" "_uart_p1_5_tx_only_init.o" "_uart_p1_5_tx_only_put_hex.o" "_uart_p1_5_tx_only_testloop.o" "main.o" "main_init.o" "driverlib\MSP430FR2xx_4xx\adc.o" "driverlib\MSP430FR2xx_4xx\crc.o" "driverlib\MSP430FR2xx_4xx\cs.o" "driverlib\MSP430FR2xx_4xx\ecomp.o" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.o" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.o" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.o" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.o" "driverlib\MSP430FR2xx_4xx\framctl.o" "driverlib\MSP430FR2xx_4xx\gpio.o" "driverlib\MSP430FR2xx_4xx\lcd_e.o" "driverlib\MSP430FR2xx_4xx\mpy32.o" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.o" "driverlib\MSP430FR2xx_4xx\rtc.o" "driverlib\MSP430FR2xx_4xx\sac.o" "driverlib\MSP430FR2xx_4xx\sfr.o" "driverlib\MSP430FR2xx_4xx\sysctl.o" "driverlib\MSP430FR2xx_4xx\tia.o" "driverlib\MSP430FR2xx_4xx\timer_a.o" "driverlib\MSP430FR2xx_4xx\timer_b.o" "driverlib\MSP430FR2xx_4xx\tlv.o" "driverlib\MSP430FR2xx_4xx\wdt_a.o" 
+rm -fr "_bit_set.d" "_cable_tester_mainloop_once.d" "_delay_1ms.d" "_delay_1s.d" "_delay_1us.d" "_i2c01_clk_to_0.d" "_i2c01_clk_to_1.d" "_i2c01_init.d" "_i2c01_sda_to_0.d" "_i2c01_sda_to_1.d" "_i2c_expander01_check_sda1.d" "_i2c_expander01_r1w0_6.d" "_i2c_expander01_read6.d" "_i2c_expander01_reset.d" "_i2c_expander01_testLoop.d" "_led_green_set_output.d" "_led_green_toggle.d" "_led_red_set_output.d" "_led_red_toggle.d" "_test001.d" "_test002.d" "_test003.d" "_uart_p1_5_tx_only_init.d" "_uart_p1_5_tx_only_put_hex.d" "_uart_p1_5_tx_only_testloop.d" "main.d" "main_init.d" "driverlib\MSP430FR2xx_4xx\adc.d" "driverlib\MSP430FR2xx_4xx\crc.d" "driverlib\MSP430FR2xx_4xx\cs.d" "driverlib\MSP430FR2xx_4xx\ecomp.d" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.d" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.d" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.d" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.d" "driverlib\MSP430FR2xx_4xx\framctl.d" "driverlib\MSP430FR2xx_4xx\gpio.d" "driverlib\MSP430FR2xx_4xx\lcd_e.d" "driverlib\MSP430FR2xx_4xx\mpy32.d" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.d" "driverlib\MSP430FR2xx_4xx\rtc.d" "driverlib\MSP430FR2xx_4xx\sac.d" "driverlib\MSP430FR2xx_4xx\sfr.d" "driverlib\MSP430FR2xx_4xx\sysctl.d" "driverlib\MSP430FR2xx_4xx\tia.d" "driverlib\MSP430FR2xx_4xx\timer_a.d" "driverlib\MSP430FR2xx_4xx\timer_b.d" "driverlib\MSP430FR2xx_4xx\tlv.d" "driverlib\MSP430FR2xx_4xx\wdt_a.d" 
+Finished clean
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__GNU'
+make -C BlinkLED_MSP430FR2433_03/Debug__GNU/ | tee log.b41m.txt
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__GNU'
+Building file: "../_bit_set.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_bit_set.d_raw" -MT"_bit_set.o"   -o"_bit_set.o" "../_bit_set.c"
+Finished building: "../_bit_set.c"
+ 
+Building file: "../_cable_tester_mainloop_once.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_cable_tester_mainloop_once.d_raw" -MT"_cable_tester_mainloop_once.o"   -o"_cable_tester_mainloop_once.o" "../_cable_tester_mainloop_once.c"
+Finished building: "../_cable_tester_mainloop_once.c"
+ 
+Building file: "../_delay_1ms.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_delay_1ms.d_raw" -MT"_delay_1ms.o"   -o"_delay_1ms.o" "../_delay_1ms.c"
+Finished building: "../_delay_1ms.c"
+ 
+Building file: "../_delay_1s.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_delay_1s.d_raw" -MT"_delay_1s.o"   -o"_delay_1s.o" "../_delay_1s.c"
+Finished building: "../_delay_1s.c"
+ 
+Building file: "../_delay_1us.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_delay_1us.d_raw" -MT"_delay_1us.o"   -o"_delay_1us.o" "../_delay_1us.c"
+Finished building: "../_delay_1us.c"
+ 
+Building file: "../_i2c01_clk_to_0.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_clk_to_0.d_raw" -MT"_i2c01_clk_to_0.o"   -o"_i2c01_clk_to_0.o" "../_i2c01_clk_to_0.c"
+Finished building: "../_i2c01_clk_to_0.c"
+ 
+Building file: "../_i2c01_clk_to_1.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_clk_to_1.d_raw" -MT"_i2c01_clk_to_1.o"   -o"_i2c01_clk_to_1.o" "../_i2c01_clk_to_1.c"
+Finished building: "../_i2c01_clk_to_1.c"
+ 
+Building file: "../_i2c01_init.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_init.d_raw" -MT"_i2c01_init.o"   -o"_i2c01_init.o" "../_i2c01_init.c"
+Finished building: "../_i2c01_init.c"
+ 
+Building file: "../_i2c01_sda_to_0.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_sda_to_0.d_raw" -MT"_i2c01_sda_to_0.o"   -o"_i2c01_sda_to_0.o" "../_i2c01_sda_to_0.c"
+Finished building: "../_i2c01_sda_to_0.c"
+ 
+Building file: "../_i2c01_sda_to_1.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_sda_to_1.d_raw" -MT"_i2c01_sda_to_1.o"   -o"_i2c01_sda_to_1.o" "../_i2c01_sda_to_1.c"
+Finished building: "../_i2c01_sda_to_1.c"
+ 
+Building file: "../_i2c_expander01_check_sda1.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_check_sda1.d_raw" -MT"_i2c_expander01_check_sda1.o"   -o"_i2c_expander01_check_sda1.o" "../_i2c_expander01_check_sda1.c"
+Finished building: "../_i2c_expander01_check_sda1.c"
+ 
+Building file: "../_i2c_expander01_r1w0_6.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_r1w0_6.d_raw" -MT"_i2c_expander01_r1w0_6.o"   -o"_i2c_expander01_r1w0_6.o" "../_i2c_expander01_r1w0_6.c"
+Finished building: "../_i2c_expander01_r1w0_6.c"
+ 
+Building file: "../_i2c_expander01_read6.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_read6.d_raw" -MT"_i2c_expander01_read6.o"   -o"_i2c_expander01_read6.o" "../_i2c_expander01_read6.c"
+Finished building: "../_i2c_expander01_read6.c"
+ 
+Building file: "../_i2c_expander01_reset.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_reset.d_raw" -MT"_i2c_expander01_reset.o"   -o"_i2c_expander01_reset.o" "../_i2c_expander01_reset.c"
+Finished building: "../_i2c_expander01_reset.c"
+ 
+Building file: "../_i2c_expander01_testLoop.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_testLoop.d_raw" -MT"_i2c_expander01_testLoop.o"   -o"_i2c_expander01_testLoop.o" "../_i2c_expander01_testLoop.c"
+Finished building: "../_i2c_expander01_testLoop.c"
+ 
+Building file: "../_led_green_set_output.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_green_set_output.d_raw" -MT"_led_green_set_output.o"   -o"_led_green_set_output.o" "../_led_green_set_output.c"
+Finished building: "../_led_green_set_output.c"
+ 
+Building file: "../_led_green_toggle.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_green_toggle.d_raw" -MT"_led_green_toggle.o"   -o"_led_green_toggle.o" "../_led_green_toggle.c"
+Finished building: "../_led_green_toggle.c"
+ 
+Building file: "../_led_red_set_output.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_red_set_output.d_raw" -MT"_led_red_set_output.o"   -o"_led_red_set_output.o" "../_led_red_set_output.c"
+Finished building: "../_led_red_set_output.c"
+ 
+Building file: "../_led_red_toggle.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_red_toggle.d_raw" -MT"_led_red_toggle.o"   -o"_led_red_toggle.o" "../_led_red_toggle.c"
+Finished building: "../_led_red_toggle.c"
+ 
+Building file: "../_test001.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_test001.d_raw" -MT"_test001.o"   -o"_test001.o" "../_test001.c"
+Finished building: "../_test001.c"
+ 
+Building file: "../_test002.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_test002.d_raw" -MT"_test002.o"   -o"_test002.o" "../_test002.c"
+Finished building: "../_test002.c"
+ 
+Building file: "../_test003.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_test003.d_raw" -MT"_test003.o"   -o"_test003.o" "../_test003.c"
+Finished building: "../_test003.c"
+ 
+Building file: "../_uart_p1_5_tx_only_init.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_uart_p1_5_tx_only_init.d_raw" -MT"_uart_p1_5_tx_only_init.o"   -o"_uart_p1_5_tx_only_init.o" "../_uart_p1_5_tx_only_init.c"
+Finished building: "../_uart_p1_5_tx_only_init.c"
+ 
+Building file: "../_uart_p1_5_tx_only_put_hex.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_uart_p1_5_tx_only_put_hex.d_raw" -MT"_uart_p1_5_tx_only_put_hex.o"   -o"_uart_p1_5_tx_only_put_hex.o" "../_uart_p1_5_tx_only_put_hex.c"
+Finished building: "../_uart_p1_5_tx_only_put_hex.c"
+ 
+Building file: "../_uart_p1_5_tx_only_testloop.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_uart_p1_5_tx_only_testloop.d_raw" -MT"_uart_p1_5_tx_only_testloop.o"   -o"_uart_p1_5_tx_only_testloop.o" "../_uart_p1_5_tx_only_testloop.c"
+Finished building: "../_uart_p1_5_tx_only_testloop.c"
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"main.d_raw" -MT"main.o"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../main_init.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"main_init.d_raw" -MT"main_init.o"   -o"main_init.o" "../main_init.c"
+Finished building: "../main_init.c"
+ 
+Building target: "BlinkLED_MSP430FR2433_03.out"
+Invoking: GNU Linker
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -mhwmult=f5series -Og -g -gdwarf-3 -gstrict-dwarf -Wall -mmcu=msp430fr2433 -Wl,-Map,"BlinkLED_MSP430FR2433_03.map" -Wl,--gc-sections -L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -mmcu=msp430fr2433 -o"BlinkLED_MSP430FR2433_03.out" "./_bit_set.o" "./_cable_tester_mainloop_once.o" "./_delay_1ms.o" "./_delay_1s.o" "./_delay_1us.o" "./_i2c01_clk_to_0.o" "./_i2c01_clk_to_1.o" "./_i2c01_init.o" "./_i2c01_sda_to_0.o" "./_i2c01_sda_to_1.o" "./_i2c_expander01_check_sda1.o" "./_i2c_expander01_r1w0_6.o" "./_i2c_expander01_read6.o" "./_i2c_expander01_reset.o" "./_i2c_expander01_testLoop.o" "./_led_green_set_output.o" "./_led_green_toggle.o" "./_led_red_set_output.o" "./_led_red_toggle.o" "./_test001.o" "./_test002.o" "./_test003.o" "./_uart_p1_5_tx_only_init.o" "./_uart_p1_5_tx_only_put_hex.o" "./_uart_p1_5_tx_only_testloop.o" "./main.o" "./main_init.o" "./driverlib/MSP430FR2xx_4xx/adc.o" "./driverlib/MSP430FR2xx_4xx/crc.o" "./driverlib/MSP430FR2xx_4xx/cs.o" "./driverlib/MSP430FR2xx_4xx/ecomp.o" "./driverlib/MSP430FR2xx_4xx/eusci_a_spi.o" "./driverlib/MSP430FR2xx_4xx/eusci_a_uart.o" "./driverlib/MSP430FR2xx_4xx/eusci_b_i2c.o" "./driverlib/MSP430FR2xx_4xx/eusci_b_spi.o" "./driverlib/MSP430FR2xx_4xx/framctl.o" "./driverlib/MSP430FR2xx_4xx/gpio.o" "./driverlib/MSP430FR2xx_4xx/lcd_e.o" "./driverlib/MSP430FR2xx_4xx/mpy32.o" "./driverlib/MSP430FR2xx_4xx/pmm.o" "./driverlib/MSP430FR2xx_4xx/rtc.o" "./driverlib/MSP430FR2xx_4xx/sac.o" "./driverlib/MSP430FR2xx_4xx/sfr.o" "./driverlib/MSP430FR2xx_4xx/sysctl.o" "./driverlib/MSP430FR2xx_4xx/tia.o" "./driverlib/MSP430FR2xx_4xx/timer_a.o" "./driverlib/MSP430FR2xx_4xx/timer_b.o" "./driverlib/MSP430FR2xx_4xx/tlv.o" "./driverlib/MSP430FR2xx_4xx/wdt_a.o" -T"../msp430fr2433.ld"  -Wl,--start-group -lgcc -lc -Wl,--end-group 
+Finished building target: "BlinkLED_MSP430FR2433_03.out"
+ 
+Building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+Invoking: GNU Objcopy Utility
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded  "BlinkLED_MSP430FR2433_03.out"  "BlinkLED_MSP430FR2433_03.hex"
+Finished building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__GNU'
+make -C BlinkLED_MSP430FR2433_03/Debug__TI/ clean
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TI'
+rm -fr  "BlinkLED_MSP430FR2433_03.hex"  "BlinkLED_MSP430FR2433_03.out" 
+rm -fr "_bit_set.obj" "_cable_tester_mainloop_once.obj" "_delay_1ms.obj" "_delay_1s.obj" "_delay_1us.obj" "_i2c01_clk_to_0.obj" "_i2c01_clk_to_1.obj" "_i2c01_init.obj" "_i2c01_sda_to_0.obj" "_i2c01_sda_to_1.obj" "_i2c_expander01_check_sda1.obj" "_i2c_expander01_r1w0_6.obj" "_i2c_expander01_read6.obj" "_i2c_expander01_reset.obj" "_i2c_expander01_testLoop.obj" "_led_green_set_output.obj" "_led_green_toggle.obj" "_led_red_set_output.obj" "_led_red_toggle.obj" "_test001.obj" "_test002.obj" "_test003.obj" "_uart_p1_5_tx_only_init.obj" "_uart_p1_5_tx_only_put_hex.obj" "_uart_p1_5_tx_only_testloop.obj" "main.obj" "main_init.obj" "driverlib\MSP430FR2xx_4xx\adc.obj" "driverlib\MSP430FR2xx_4xx\crc.obj" "driverlib\MSP430FR2xx_4xx\cs.obj" "driverlib\MSP430FR2xx_4xx\ecomp.obj" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.obj" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.obj" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.obj" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.obj" "driverlib\MSP430FR2xx_4xx\framctl.obj" "driverlib\MSP430FR2xx_4xx\gpio.obj" 
+rm -fr "driverlib\MSP430FR2xx_4xx\lcd_e.obj" "driverlib\MSP430FR2xx_4xx\mpy32.obj" "driverlib\MSP430FR2xx_4xx\pmm.obj" "driverlib\MSP430FR2xx_4xx\rtc.obj" "driverlib\MSP430FR2xx_4xx\sac.obj" "driverlib\MSP430FR2xx_4xx\sfr.obj" "driverlib\MSP430FR2xx_4xx\sysctl.obj" "driverlib\MSP430FR2xx_4xx\tia.obj" "driverlib\MSP430FR2xx_4xx\timer_a.obj" "driverlib\MSP430FR2xx_4xx\timer_b.obj" "driverlib\MSP430FR2xx_4xx\tlv.obj" "driverlib\MSP430FR2xx_4xx\wdt_a.obj" 
+rm -fr "_bit_set.d" "_cable_tester_mainloop_once.d" "_delay_1ms.d" "_delay_1s.d" "_delay_1us.d" "_i2c01_clk_to_0.d" "_i2c01_clk_to_1.d" "_i2c01_init.d" "_i2c01_sda_to_0.d" "_i2c01_sda_to_1.d" "_i2c_expander01_check_sda1.d" "_i2c_expander01_r1w0_6.d" "_i2c_expander01_read6.d" "_i2c_expander01_reset.d" "_i2c_expander01_testLoop.d" "_led_green_set_output.d" "_led_green_toggle.d" "_led_red_set_output.d" "_led_red_toggle.d" "_test001.d" "_test002.d" "_test003.d" "_uart_p1_5_tx_only_init.d" "_uart_p1_5_tx_only_put_hex.d" "_uart_p1_5_tx_only_testloop.d" "main.d" "main_init.d" "driverlib\MSP430FR2xx_4xx\adc.d" "driverlib\MSP430FR2xx_4xx\crc.d" "driverlib\MSP430FR2xx_4xx\cs.d" "driverlib\MSP430FR2xx_4xx\ecomp.d" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.d" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.d" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.d" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.d" "driverlib\MSP430FR2xx_4xx\framctl.d" "driverlib\MSP430FR2xx_4xx\gpio.d" "driverlib\MSP430FR2xx_4xx\lcd_e.d" "driverlib\MSP430FR2xx_4xx\mpy32.d" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.d" "driverlib\MSP430FR2xx_4xx\rtc.d" "driverlib\MSP430FR2xx_4xx\sac.d" "driverlib\MSP430FR2xx_4xx\sfr.d" "driverlib\MSP430FR2xx_4xx\sysctl.d" "driverlib\MSP430FR2xx_4xx\tia.d" "driverlib\MSP430FR2xx_4xx\timer_a.d" "driverlib\MSP430FR2xx_4xx\timer_b.d" "driverlib\MSP430FR2xx_4xx\tlv.d" "driverlib\MSP430FR2xx_4xx\wdt_a.d" 
+Finished clean
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TI'
+make -C BlinkLED_MSP430FR2433_03/Debug__TI/ | tee log.b42m.txt
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TI'
+Building file: "../_bit_set.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_bit_set.d_raw"  "../_bit_set.c"
+Finished building: "../_bit_set.c"
+ 
+Building file: "../_cable_tester_mainloop_once.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_cable_tester_mainloop_once.d_raw"  "../_cable_tester_mainloop_once.c"
+Finished building: "../_cable_tester_mainloop_once.c"
+ 
+Building file: "../_delay_1ms.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1ms.d_raw"  "../_delay_1ms.c"
+Finished building: "../_delay_1ms.c"
+ 
+Building file: "../_delay_1s.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1s.d_raw"  "../_delay_1s.c"
+Finished building: "../_delay_1s.c"
+ 
+Building file: "../_delay_1us.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1us.d_raw"  "../_delay_1us.c"
+Finished building: "../_delay_1us.c"
+ 
+Building file: "../_i2c01_clk_to_0.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_clk_to_0.d_raw"  "../_i2c01_clk_to_0.c"
+Finished building: "../_i2c01_clk_to_0.c"
+ 
+Building file: "../_i2c01_clk_to_1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_clk_to_1.d_raw"  "../_i2c01_clk_to_1.c"
+Finished building: "../_i2c01_clk_to_1.c"
+ 
+Building file: "../_i2c01_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_init.d_raw"  "../_i2c01_init.c"
+Finished building: "../_i2c01_init.c"
+ 
+Building file: "../_i2c01_sda_to_0.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_sda_to_0.d_raw"  "../_i2c01_sda_to_0.c"
+Finished building: "../_i2c01_sda_to_0.c"
+ 
+Building file: "../_i2c01_sda_to_1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_sda_to_1.d_raw"  "../_i2c01_sda_to_1.c"
+Finished building: "../_i2c01_sda_to_1.c"
+ 
+Building file: "../_i2c_expander01_check_sda1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_check_sda1.d_raw"  "../_i2c_expander01_check_sda1.c"
+Finished building: "../_i2c_expander01_check_sda1.c"
+ 
+Building file: "../_i2c_expander01_r1w0_6.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_r1w0_6.d_raw"  "../_i2c_expander01_r1w0_6.c"
+Finished building: "../_i2c_expander01_r1w0_6.c"
+ 
+Building file: "../_i2c_expander01_read6.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_read6.d_raw"  "../_i2c_expander01_read6.c"
+Finished building: "../_i2c_expander01_read6.c"
+ 
+Building file: "../_i2c_expander01_reset.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_reset.d_raw"  "../_i2c_expander01_reset.c"
+Finished building: "../_i2c_expander01_reset.c"
+ 
+Building file: "../_i2c_expander01_testLoop.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_testLoop.d_raw"  "../_i2c_expander01_testLoop.c"
+Finished building: "../_i2c_expander01_testLoop.c"
+ 
+Building file: "../_led_green_set_output.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_green_set_output.d_raw"  "../_led_green_set_output.c"
+Finished building: "../_led_green_set_output.c"
+ 
+Building file: "../_led_green_toggle.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_green_toggle.d_raw"  "../_led_green_toggle.c"
+Finished building: "../_led_green_toggle.c"
+ 
+Building file: "../_led_red_set_output.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_red_set_output.d_raw"  "../_led_red_set_output.c"
+Finished building: "../_led_red_set_output.c"
+ 
+Building file: "../_led_red_toggle.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_red_toggle.d_raw"  "../_led_red_toggle.c"
+Finished building: "../_led_red_toggle.c"
+ 
+Building file: "../_test001.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test001.d_raw"  "../_test001.c"
+Finished building: "../_test001.c"
+ 
+Building file: "../_test002.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test002.d_raw"  "../_test002.c"
+Finished building: "../_test002.c"
+ 
+Building file: "../_test003.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test003.d_raw"  "../_test003.c"
+Finished building: "../_test003.c"
+ 
+Building file: "../_uart_p1_5_tx_only_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_init.d_raw"  "../_uart_p1_5_tx_only_init.c"
+Finished building: "../_uart_p1_5_tx_only_init.c"
+ 
+Building file: "../_uart_p1_5_tx_only_put_hex.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_put_hex.d_raw"  "../_uart_p1_5_tx_only_put_hex.c"
+Finished building: "../_uart_p1_5_tx_only_put_hex.c"
+ 
+Building file: "../_uart_p1_5_tx_only_testloop.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_testloop.d_raw"  "../_uart_p1_5_tx_only_testloop.c"
+Finished building: "../_uart_p1_5_tx_only_testloop.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../main_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main_init.d_raw"  "../main_init.c"
+Finished building: "../main_init.c"
+ 
+Building target: "BlinkLED_MSP430FR2433_03.out"
+Invoking: MSP430 Linker
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"BlinkLED_MSP430FR2433_03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/lib" -i"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="BlinkLED_MSP430FR2433_03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "BlinkLED_MSP430FR2433_03.out" "./_bit_set.obj" "./_cable_tester_mainloop_once.obj" "./_delay_1ms.obj" "./_delay_1s.obj" "./_delay_1us.obj" "./_i2c01_clk_to_0.obj" "./_i2c01_clk_to_1.obj" "./_i2c01_init.obj" "./_i2c01_sda_to_0.obj" "./_i2c01_sda_to_1.obj" "./_i2c_expander01_check_sda1.obj" "./_i2c_expander01_r1w0_6.obj" "./_i2c_expander01_read6.obj" "./_i2c_expander01_reset.obj" "./_i2c_expander01_testLoop.obj" "./_led_green_set_output.obj" "./_led_green_toggle.obj" "./_led_red_set_output.obj" "./_led_red_toggle.obj" "./_test001.obj" "./_test002.obj" "./_test003.obj" "./_uart_p1_5_tx_only_init.obj" "./_uart_p1_5_tx_only_put_hex.obj" "./_uart_p1_5_tx_only_testloop.obj" "./main.obj" "./main_init.obj" "./driverlib/MSP430FR2xx_4xx/adc.obj" "./driverlib/MSP430FR2xx_4xx/crc.obj" "./driverlib/MSP430FR2xx_4xx/cs.obj" "./driverlib/MSP430FR2xx_4xx/ecomp.obj" "./driverlib/MSP430FR2xx_4xx/eusci_a_spi.obj" "./driverlib/MSP430FR2xx_4xx/eusci_a_uart.obj" "./driverlib/MSP430FR2xx_4xx/eusci_b_i2c.obj" "./driverlib/MSP430FR2xx_4xx/eusci_b_spi.obj" "./driverlib/MSP430FR2xx_4xx/framctl.obj" "./driverlib/MSP430FR2xx_4xx/gpio.obj" "./driverlib/MSP430FR2xx_4xx/lcd_e.obj" "./driverlib/MSP430FR2xx_4xx/mpy32.obj" "./driverlib/MSP430FR2xx_4xx/pmm.obj" "./driverlib/MSP430FR2xx_4xx/rtc.obj" "./driverlib/MSP430FR2xx_4xx/sac.obj" "./driverlib/MSP430FR2xx_4xx/sfr.obj" "./driverlib/MSP430FR2xx_4xx/sysctl.obj" "./driverlib/MSP430FR2xx_4xx/tia.obj" "./driverlib/MSP430FR2xx_4xx/timer_a.obj" "./driverlib/MSP430FR2xx_4xx/timer_b.obj" "./driverlib/MSP430FR2xx_4xx/tlv.obj" "./driverlib/MSP430FR2xx_4xx/wdt_a.obj" "../lnk_msp430fr2433.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "BlinkLED_MSP430FR2433_03.out"
+ 
+Building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+Invoking: MSP430 Hex Utility
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off --intel -o "BlinkLED_MSP430FR2433_03.hex"  "BlinkLED_MSP430FR2433_03.out" 
+Translating to Intel format...
+   "BlinkLED_MSP430FR2433_03.out" .cinit ==> .cinit
+   "BlinkLED_MSP430FR2433_03.out" .const ==> .const
+   "BlinkLED_MSP430FR2433_03.out" .text ==> .text
+   "BlinkLED_MSP430FR2433_03.out" $fill000 ==> $fill000
+   "BlinkLED_MSP430FR2433_03.out" $fill001 ==> $fill001
+   "BlinkLED_MSP430FR2433_03.out" PORT2 ==> PORT2
+   "BlinkLED_MSP430FR2433_03.out" PORT1 ==> PORT1
+   "BlinkLED_MSP430FR2433_03.out" ADC ==> ADC
+   "BlinkLED_MSP430FR2433_03.out" USCI_B0 ==> USCI_B0
+   "BlinkLED_MSP430FR2433_03.out" USCI_A1 ==> USCI_A1
+   "BlinkLED_MSP430FR2433_03.out" USCI_A0 ==> USCI_A0
+   "BlinkLED_MSP430FR2433_03.out" WDT ==> WDT
+   "BlinkLED_MSP430FR2433_03.out" RTC ==> RTC
+   "BlinkLED_MSP430FR2433_03.out" TIMER3_A1 ==> TIMER3_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER3_A0 ==> TIMER3_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER2_A1 ==> TIMER2_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER2_A0 ==> TIMER2_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER1_A1 ==> TIMER1_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER1_A0 ==> TIMER1_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER0_A1 ==> TIMER0_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER0_A0 ==> TIMER0_A0
+   "BlinkLED_MSP430FR2433_03.out" UNMI ==> UNMI
+   "BlinkLED_MSP430FR2433_03.out" SYSNMI ==> SYSNMI
+   "BlinkLED_MSP430FR2433_03.out" .reset ==> .reset
+Finished building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TI'
+make -C BlinkLED_MSP430FR2433_03/Debug/ clean
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug'
+rm -fr  "BlinkLED_MSP430FR2433_03.hex"  "BlinkLED_MSP430FR2433_03.out" 
+rm -fr "_bit_set.o" "_cable_tester_mainloop_once.o" "_delay_1ms.o" "_delay_1s.o" "_delay_1us.o" "_i2c01_clk_to_0.o" "_i2c01_clk_to_1.o" "_i2c01_init.o" "_i2c01_sda_to_0.o" "_i2c01_sda_to_1.o" "_i2c_expander01_check_sda1.o" "_i2c_expander01_r1w0_6.o" "_i2c_expander01_read6.o" "_i2c_expander01_reset.o" "_i2c_expander01_testLoop.o" "_led_green_set_output.o" "_led_green_toggle.o" "_led_red_set_output.o" "_led_red_toggle.o" "_test001.o" "_test002.o" "_test003.o" "_uart_p1_5_tx_only_init.o" "_uart_p1_5_tx_only_put_hex.o" "_uart_p1_5_tx_only_testloop.o" "main.o" "main_init.o" "driverlib\MSP430FR2xx_4xx\adc.o" "driverlib\MSP430FR2xx_4xx\crc.o" "driverlib\MSP430FR2xx_4xx\cs.o" "driverlib\MSP430FR2xx_4xx\ecomp.o" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.o" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.o" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.o" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.o" "driverlib\MSP430FR2xx_4xx\framctl.o" "driverlib\MSP430FR2xx_4xx\gpio.o" "driverlib\MSP430FR2xx_4xx\lcd_e.o" "driverlib\MSP430FR2xx_4xx\mpy32.o" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.o" "driverlib\MSP430FR2xx_4xx\rtc.o" "driverlib\MSP430FR2xx_4xx\sac.o" "driverlib\MSP430FR2xx_4xx\sfr.o" "driverlib\MSP430FR2xx_4xx\sysctl.o" "driverlib\MSP430FR2xx_4xx\tia.o" "driverlib\MSP430FR2xx_4xx\timer_a.o" "driverlib\MSP430FR2xx_4xx\timer_b.o" "driverlib\MSP430FR2xx_4xx\tlv.o" "driverlib\MSP430FR2xx_4xx\wdt_a.o" 
+rm -fr "_bit_set.d" "_cable_tester_mainloop_once.d" "_delay_1ms.d" "_delay_1s.d" "_delay_1us.d" "_i2c01_clk_to_0.d" "_i2c01_clk_to_1.d" "_i2c01_init.d" "_i2c01_sda_to_0.d" "_i2c01_sda_to_1.d" "_i2c_expander01_check_sda1.d" "_i2c_expander01_r1w0_6.d" "_i2c_expander01_read6.d" "_i2c_expander01_reset.d" "_i2c_expander01_testLoop.d" "_led_green_set_output.d" "_led_green_toggle.d" "_led_red_set_output.d" "_led_red_toggle.d" "_test001.d" "_test002.d" "_test003.d" "_uart_p1_5_tx_only_init.d" "_uart_p1_5_tx_only_put_hex.d" "_uart_p1_5_tx_only_testloop.d" "main.d" "main_init.d" "driverlib\MSP430FR2xx_4xx\adc.d" "driverlib\MSP430FR2xx_4xx\crc.d" "driverlib\MSP430FR2xx_4xx\cs.d" "driverlib\MSP430FR2xx_4xx\ecomp.d" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.d" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.d" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.d" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.d" "driverlib\MSP430FR2xx_4xx\framctl.d" "driverlib\MSP430FR2xx_4xx\gpio.d" "driverlib\MSP430FR2xx_4xx\lcd_e.d" "driverlib\MSP430FR2xx_4xx\mpy32.d" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.d" "driverlib\MSP430FR2xx_4xx\rtc.d" "driverlib\MSP430FR2xx_4xx\sac.d" "driverlib\MSP430FR2xx_4xx\sfr.d" "driverlib\MSP430FR2xx_4xx\sysctl.d" "driverlib\MSP430FR2xx_4xx\tia.d" "driverlib\MSP430FR2xx_4xx\timer_a.d" "driverlib\MSP430FR2xx_4xx\timer_b.d" "driverlib\MSP430FR2xx_4xx\tlv.d" "driverlib\MSP430FR2xx_4xx\wdt_a.d" 
+Finished clean
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug'
+make -C BlinkLED_MSP430FR2433_03/Debug/ | tee log.b43m.txt
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug'
+Building file: "../_bit_set.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_bit_set.d_raw" -MT"_bit_set.o"   -o"_bit_set.o" "../_bit_set.c"
+Finished building: "../_bit_set.c"
+ 
+Building file: "../_cable_tester_mainloop_once.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_cable_tester_mainloop_once.d_raw" -MT"_cable_tester_mainloop_once.o"   -o"_cable_tester_mainloop_once.o" "../_cable_tester_mainloop_once.c"
+Finished building: "../_cable_tester_mainloop_once.c"
+ 
+Building file: "../_delay_1ms.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_delay_1ms.d_raw" -MT"_delay_1ms.o"   -o"_delay_1ms.o" "../_delay_1ms.c"
+Finished building: "../_delay_1ms.c"
+ 
+Building file: "../_delay_1s.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_delay_1s.d_raw" -MT"_delay_1s.o"   -o"_delay_1s.o" "../_delay_1s.c"
+Finished building: "../_delay_1s.c"
+ 
+Building file: "../_delay_1us.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_delay_1us.d_raw" -MT"_delay_1us.o"   -o"_delay_1us.o" "../_delay_1us.c"
+Finished building: "../_delay_1us.c"
+ 
+Building file: "../_i2c01_clk_to_0.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_clk_to_0.d_raw" -MT"_i2c01_clk_to_0.o"   -o"_i2c01_clk_to_0.o" "../_i2c01_clk_to_0.c"
+Finished building: "../_i2c01_clk_to_0.c"
+ 
+Building file: "../_i2c01_clk_to_1.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_clk_to_1.d_raw" -MT"_i2c01_clk_to_1.o"   -o"_i2c01_clk_to_1.o" "../_i2c01_clk_to_1.c"
+Finished building: "../_i2c01_clk_to_1.c"
+ 
+Building file: "../_i2c01_init.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_init.d_raw" -MT"_i2c01_init.o"   -o"_i2c01_init.o" "../_i2c01_init.c"
+Finished building: "../_i2c01_init.c"
+ 
+Building file: "../_i2c01_sda_to_0.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_sda_to_0.d_raw" -MT"_i2c01_sda_to_0.o"   -o"_i2c01_sda_to_0.o" "../_i2c01_sda_to_0.c"
+Finished building: "../_i2c01_sda_to_0.c"
+ 
+Building file: "../_i2c01_sda_to_1.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c01_sda_to_1.d_raw" -MT"_i2c01_sda_to_1.o"   -o"_i2c01_sda_to_1.o" "../_i2c01_sda_to_1.c"
+Finished building: "../_i2c01_sda_to_1.c"
+ 
+Building file: "../_i2c_expander01_check_sda1.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_check_sda1.d_raw" -MT"_i2c_expander01_check_sda1.o"   -o"_i2c_expander01_check_sda1.o" "../_i2c_expander01_check_sda1.c"
+Finished building: "../_i2c_expander01_check_sda1.c"
+ 
+Building file: "../_i2c_expander01_r1w0_6.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_r1w0_6.d_raw" -MT"_i2c_expander01_r1w0_6.o"   -o"_i2c_expander01_r1w0_6.o" "../_i2c_expander01_r1w0_6.c"
+Finished building: "../_i2c_expander01_r1w0_6.c"
+ 
+Building file: "../_i2c_expander01_read6.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_read6.d_raw" -MT"_i2c_expander01_read6.o"   -o"_i2c_expander01_read6.o" "../_i2c_expander01_read6.c"
+Finished building: "../_i2c_expander01_read6.c"
+ 
+Building file: "../_i2c_expander01_reset.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_reset.d_raw" -MT"_i2c_expander01_reset.o"   -o"_i2c_expander01_reset.o" "../_i2c_expander01_reset.c"
+Finished building: "../_i2c_expander01_reset.c"
+ 
+Building file: "../_i2c_expander01_testLoop.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_i2c_expander01_testLoop.d_raw" -MT"_i2c_expander01_testLoop.o"   -o"_i2c_expander01_testLoop.o" "../_i2c_expander01_testLoop.c"
+Finished building: "../_i2c_expander01_testLoop.c"
+ 
+Building file: "../_led_green_set_output.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_green_set_output.d_raw" -MT"_led_green_set_output.o"   -o"_led_green_set_output.o" "../_led_green_set_output.c"
+Finished building: "../_led_green_set_output.c"
+ 
+Building file: "../_led_green_toggle.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_green_toggle.d_raw" -MT"_led_green_toggle.o"   -o"_led_green_toggle.o" "../_led_green_toggle.c"
+Finished building: "../_led_green_toggle.c"
+ 
+Building file: "../_led_red_set_output.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_red_set_output.d_raw" -MT"_led_red_set_output.o"   -o"_led_red_set_output.o" "../_led_red_set_output.c"
+Finished building: "../_led_red_set_output.c"
+ 
+Building file: "../_led_red_toggle.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_led_red_toggle.d_raw" -MT"_led_red_toggle.o"   -o"_led_red_toggle.o" "../_led_red_toggle.c"
+Finished building: "../_led_red_toggle.c"
+ 
+Building file: "../_test001.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_test001.d_raw" -MT"_test001.o"   -o"_test001.o" "../_test001.c"
+Finished building: "../_test001.c"
+ 
+Building file: "../_test002.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_test002.d_raw" -MT"_test002.o"   -o"_test002.o" "../_test002.c"
+Finished building: "../_test002.c"
+ 
+Building file: "../_test003.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_test003.d_raw" -MT"_test003.o"   -o"_test003.o" "../_test003.c"
+Finished building: "../_test003.c"
+ 
+Building file: "../_uart_p1_5_tx_only_init.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_uart_p1_5_tx_only_init.d_raw" -MT"_uart_p1_5_tx_only_init.o"   -o"_uart_p1_5_tx_only_init.o" "../_uart_p1_5_tx_only_init.c"
+Finished building: "../_uart_p1_5_tx_only_init.c"
+ 
+Building file: "../_uart_p1_5_tx_only_put_hex.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_uart_p1_5_tx_only_put_hex.d_raw" -MT"_uart_p1_5_tx_only_put_hex.o"   -o"_uart_p1_5_tx_only_put_hex.o" "../_uart_p1_5_tx_only_put_hex.c"
+Finished building: "../_uart_p1_5_tx_only_put_hex.c"
+ 
+Building file: "../_uart_p1_5_tx_only_testloop.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"_uart_p1_5_tx_only_testloop.d_raw" -MT"_uart_p1_5_tx_only_testloop.o"   -o"_uart_p1_5_tx_only_testloop.o" "../_uart_p1_5_tx_only_testloop.c"
+Finished building: "../_uart_p1_5_tx_only_testloop.c"
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"main.d_raw" -MT"main.o"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../main_init.c"
+Invoking: GNU Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -c -mmcu=msp430fr2433 -mhwmult=f5series -I"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" -I"/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" -I"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/msp430-elf/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"main_init.d_raw" -MT"main_init.o"   -o"main_init.o" "../main_init.c"
+Finished building: "../main_init.c"
+ 
+Building target: "BlinkLED_MSP430FR2433_03.out"
+Invoking: GNU Linker
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" -mhwmult=f5series -Og -g -gdwarf-3 -gstrict-dwarf -Wall -mmcu=msp430fr2433 -Wl,-Map,"BlinkLED_MSP430FR2433_03.map" -Wl,--gc-sections -L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" -mmcu=msp430fr2433 -o"BlinkLED_MSP430FR2433_03.out" "./_bit_set.o" "./_cable_tester_mainloop_once.o" "./_delay_1ms.o" "./_delay_1s.o" "./_delay_1us.o" "./_i2c01_clk_to_0.o" "./_i2c01_clk_to_1.o" "./_i2c01_init.o" "./_i2c01_sda_to_0.o" "./_i2c01_sda_to_1.o" "./_i2c_expander01_check_sda1.o" "./_i2c_expander01_r1w0_6.o" "./_i2c_expander01_read6.o" "./_i2c_expander01_reset.o" "./_i2c_expander01_testLoop.o" "./_led_green_set_output.o" "./_led_green_toggle.o" "./_led_red_set_output.o" "./_led_red_toggle.o" "./_test001.o" "./_test002.o" "./_test003.o" "./_uart_p1_5_tx_only_init.o" "./_uart_p1_5_tx_only_put_hex.o" "./_uart_p1_5_tx_only_testloop.o" "./main.o" "./main_init.o" "./driverlib/MSP430FR2xx_4xx/adc.o" "./driverlib/MSP430FR2xx_4xx/crc.o" "./driverlib/MSP430FR2xx_4xx/cs.o" "./driverlib/MSP430FR2xx_4xx/ecomp.o" "./driverlib/MSP430FR2xx_4xx/eusci_a_spi.o" "./driverlib/MSP430FR2xx_4xx/eusci_a_uart.o" "./driverlib/MSP430FR2xx_4xx/eusci_b_i2c.o" "./driverlib/MSP430FR2xx_4xx/eusci_b_spi.o" "./driverlib/MSP430FR2xx_4xx/framctl.o" "./driverlib/MSP430FR2xx_4xx/gpio.o" "./driverlib/MSP430FR2xx_4xx/lcd_e.o" "./driverlib/MSP430FR2xx_4xx/mpy32.o" "./driverlib/MSP430FR2xx_4xx/pmm.o" "./driverlib/MSP430FR2xx_4xx/rtc.o" "./driverlib/MSP430FR2xx_4xx/sac.o" "./driverlib/MSP430FR2xx_4xx/sfr.o" "./driverlib/MSP430FR2xx_4xx/sysctl.o" "./driverlib/MSP430FR2xx_4xx/tia.o" "./driverlib/MSP430FR2xx_4xx/timer_a.o" "./driverlib/MSP430FR2xx_4xx/timer_b.o" "./driverlib/MSP430FR2xx_4xx/tlv.o" "./driverlib/MSP430FR2xx_4xx/wdt_a.o" -T"../msp430fr2433.ld"  -Wl,--start-group -lgcc -lc -Wl,--end-group 
+Finished building target: "BlinkLED_MSP430FR2433_03.out"
+ 
+Building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+Invoking: GNU Objcopy Utility
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded  "BlinkLED_MSP430FR2433_03.out"  "BlinkLED_MSP430FR2433_03.hex"
+Finished building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug'
+make -C BlinkLED_MSP430FR2433_03/Debug__TIT/ clean
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIT'
+rm -fr  "BlinkLED_MSP430FR2433_03.txt"  "BlinkLED_MSP430FR2433_03.out" 
+rm -fr "_bit_set.obj" "_cable_tester_mainloop_once.obj" "_delay_1ms.obj" "_delay_1s.obj" "_delay_1us.obj" "_i2c01_clk_to_0.obj" "_i2c01_clk_to_1.obj" "_i2c01_init.obj" "_i2c01_sda_to_0.obj" "_i2c01_sda_to_1.obj" "_i2c_expander01_check_sda1.obj" "_i2c_expander01_r1w0_6.obj" "_i2c_expander01_read6.obj" "_i2c_expander01_reset.obj" "_i2c_expander01_testLoop.obj" "_led_green_set_output.obj" "_led_green_toggle.obj" "_led_red_set_output.obj" "_led_red_toggle.obj" "_test001.obj" "_test002.obj" "_test003.obj" "_uart_p1_5_tx_only_init.obj" "_uart_p1_5_tx_only_put_hex.obj" "_uart_p1_5_tx_only_testloop.obj" "main.obj" "main_init.obj" "driverlib\MSP430FR2xx_4xx\adc.obj" "driverlib\MSP430FR2xx_4xx\crc.obj" "driverlib\MSP430FR2xx_4xx\cs.obj" "driverlib\MSP430FR2xx_4xx\ecomp.obj" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.obj" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.obj" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.obj" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.obj" "driverlib\MSP430FR2xx_4xx\framctl.obj" "driverlib\MSP430FR2xx_4xx\gpio.obj" 
+rm -fr "driverlib\MSP430FR2xx_4xx\lcd_e.obj" "driverlib\MSP430FR2xx_4xx\mpy32.obj" "driverlib\MSP430FR2xx_4xx\pmm.obj" "driverlib\MSP430FR2xx_4xx\rtc.obj" "driverlib\MSP430FR2xx_4xx\sac.obj" "driverlib\MSP430FR2xx_4xx\sfr.obj" "driverlib\MSP430FR2xx_4xx\sysctl.obj" "driverlib\MSP430FR2xx_4xx\tia.obj" "driverlib\MSP430FR2xx_4xx\timer_a.obj" "driverlib\MSP430FR2xx_4xx\timer_b.obj" "driverlib\MSP430FR2xx_4xx\tlv.obj" "driverlib\MSP430FR2xx_4xx\wdt_a.obj" 
+rm -fr "_bit_set.d" "_cable_tester_mainloop_once.d" "_delay_1ms.d" "_delay_1s.d" "_delay_1us.d" "_i2c01_clk_to_0.d" "_i2c01_clk_to_1.d" "_i2c01_init.d" "_i2c01_sda_to_0.d" "_i2c01_sda_to_1.d" "_i2c_expander01_check_sda1.d" "_i2c_expander01_r1w0_6.d" "_i2c_expander01_read6.d" "_i2c_expander01_reset.d" "_i2c_expander01_testLoop.d" "_led_green_set_output.d" "_led_green_toggle.d" "_led_red_set_output.d" "_led_red_toggle.d" "_test001.d" "_test002.d" "_test003.d" "_uart_p1_5_tx_only_init.d" "_uart_p1_5_tx_only_put_hex.d" "_uart_p1_5_tx_only_testloop.d" "main.d" "main_init.d" "driverlib\MSP430FR2xx_4xx\adc.d" "driverlib\MSP430FR2xx_4xx\crc.d" "driverlib\MSP430FR2xx_4xx\cs.d" "driverlib\MSP430FR2xx_4xx\ecomp.d" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.d" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.d" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.d" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.d" "driverlib\MSP430FR2xx_4xx\framctl.d" "driverlib\MSP430FR2xx_4xx\gpio.d" "driverlib\MSP430FR2xx_4xx\lcd_e.d" "driverlib\MSP430FR2xx_4xx\mpy32.d" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.d" "driverlib\MSP430FR2xx_4xx\rtc.d" "driverlib\MSP430FR2xx_4xx\sac.d" "driverlib\MSP430FR2xx_4xx\sfr.d" "driverlib\MSP430FR2xx_4xx\sysctl.d" "driverlib\MSP430FR2xx_4xx\tia.d" "driverlib\MSP430FR2xx_4xx\timer_a.d" "driverlib\MSP430FR2xx_4xx\timer_b.d" "driverlib\MSP430FR2xx_4xx\tlv.d" "driverlib\MSP430FR2xx_4xx\wdt_a.d" 
+Finished clean
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIT'
+make -C BlinkLED_MSP430FR2433_03/Debug__TIT/ | tee log.b44m.txt
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIT'
+Building file: "../_bit_set.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_bit_set.d_raw"  "../_bit_set.c"
+Finished building: "../_bit_set.c"
+ 
+Building file: "../_cable_tester_mainloop_once.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_cable_tester_mainloop_once.d_raw"  "../_cable_tester_mainloop_once.c"
+Finished building: "../_cable_tester_mainloop_once.c"
+ 
+Building file: "../_delay_1ms.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1ms.d_raw"  "../_delay_1ms.c"
+Finished building: "../_delay_1ms.c"
+ 
+Building file: "../_delay_1s.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1s.d_raw"  "../_delay_1s.c"
+Finished building: "../_delay_1s.c"
+ 
+Building file: "../_delay_1us.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1us.d_raw"  "../_delay_1us.c"
+Finished building: "../_delay_1us.c"
+ 
+Building file: "../_i2c01_clk_to_0.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_clk_to_0.d_raw"  "../_i2c01_clk_to_0.c"
+Finished building: "../_i2c01_clk_to_0.c"
+ 
+Building file: "../_i2c01_clk_to_1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_clk_to_1.d_raw"  "../_i2c01_clk_to_1.c"
+Finished building: "../_i2c01_clk_to_1.c"
+ 
+Building file: "../_i2c01_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_init.d_raw"  "../_i2c01_init.c"
+Finished building: "../_i2c01_init.c"
+ 
+Building file: "../_i2c01_sda_to_0.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_sda_to_0.d_raw"  "../_i2c01_sda_to_0.c"
+Finished building: "../_i2c01_sda_to_0.c"
+ 
+Building file: "../_i2c01_sda_to_1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_sda_to_1.d_raw"  "../_i2c01_sda_to_1.c"
+Finished building: "../_i2c01_sda_to_1.c"
+ 
+Building file: "../_i2c_expander01_check_sda1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_check_sda1.d_raw"  "../_i2c_expander01_check_sda1.c"
+Finished building: "../_i2c_expander01_check_sda1.c"
+ 
+Building file: "../_i2c_expander01_r1w0_6.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_r1w0_6.d_raw"  "../_i2c_expander01_r1w0_6.c"
+Finished building: "../_i2c_expander01_r1w0_6.c"
+ 
+Building file: "../_i2c_expander01_read6.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_read6.d_raw"  "../_i2c_expander01_read6.c"
+Finished building: "../_i2c_expander01_read6.c"
+ 
+Building file: "../_i2c_expander01_reset.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_reset.d_raw"  "../_i2c_expander01_reset.c"
+Finished building: "../_i2c_expander01_reset.c"
+ 
+Building file: "../_i2c_expander01_testLoop.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_testLoop.d_raw"  "../_i2c_expander01_testLoop.c"
+Finished building: "../_i2c_expander01_testLoop.c"
+ 
+Building file: "../_led_green_set_output.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_green_set_output.d_raw"  "../_led_green_set_output.c"
+Finished building: "../_led_green_set_output.c"
+ 
+Building file: "../_led_green_toggle.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_green_toggle.d_raw"  "../_led_green_toggle.c"
+Finished building: "../_led_green_toggle.c"
+ 
+Building file: "../_led_red_set_output.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_red_set_output.d_raw"  "../_led_red_set_output.c"
+Finished building: "../_led_red_set_output.c"
+ 
+Building file: "../_led_red_toggle.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_red_toggle.d_raw"  "../_led_red_toggle.c"
+Finished building: "../_led_red_toggle.c"
+ 
+Building file: "../_test001.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test001.d_raw"  "../_test001.c"
+Finished building: "../_test001.c"
+ 
+Building file: "../_test002.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test002.d_raw"  "../_test002.c"
+Finished building: "../_test002.c"
+ 
+Building file: "../_test003.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test003.d_raw"  "../_test003.c"
+Finished building: "../_test003.c"
+ 
+Building file: "../_uart_p1_5_tx_only_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_init.d_raw"  "../_uart_p1_5_tx_only_init.c"
+Finished building: "../_uart_p1_5_tx_only_init.c"
+ 
+Building file: "../_uart_p1_5_tx_only_put_hex.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_put_hex.d_raw"  "../_uart_p1_5_tx_only_put_hex.c"
+Finished building: "../_uart_p1_5_tx_only_put_hex.c"
+ 
+Building file: "../_uart_p1_5_tx_only_testloop.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_testloop.d_raw"  "../_uart_p1_5_tx_only_testloop.c"
+Finished building: "../_uart_p1_5_tx_only_testloop.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../main_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main_init.d_raw"  "../main_init.c"
+Finished building: "../main_init.c"
+ 
+Building target: "BlinkLED_MSP430FR2433_03.out"
+Invoking: MSP430 Linker
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"BlinkLED_MSP430FR2433_03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/lib" -i"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="BlinkLED_MSP430FR2433_03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "BlinkLED_MSP430FR2433_03.out" "./_bit_set.obj" "./_cable_tester_mainloop_once.obj" "./_delay_1ms.obj" "./_delay_1s.obj" "./_delay_1us.obj" "./_i2c01_clk_to_0.obj" "./_i2c01_clk_to_1.obj" "./_i2c01_init.obj" "./_i2c01_sda_to_0.obj" "./_i2c01_sda_to_1.obj" "./_i2c_expander01_check_sda1.obj" "./_i2c_expander01_r1w0_6.obj" "./_i2c_expander01_read6.obj" "./_i2c_expander01_reset.obj" "./_i2c_expander01_testLoop.obj" "./_led_green_set_output.obj" "./_led_green_toggle.obj" "./_led_red_set_output.obj" "./_led_red_toggle.obj" "./_test001.obj" "./_test002.obj" "./_test003.obj" "./_uart_p1_5_tx_only_init.obj" "./_uart_p1_5_tx_only_put_hex.obj" "./_uart_p1_5_tx_only_testloop.obj" "./main.obj" "./main_init.obj" "./driverlib/MSP430FR2xx_4xx/adc.obj" "./driverlib/MSP430FR2xx_4xx/crc.obj" "./driverlib/MSP430FR2xx_4xx/cs.obj" "./driverlib/MSP430FR2xx_4xx/ecomp.obj" "./driverlib/MSP430FR2xx_4xx/eusci_a_spi.obj" "./driverlib/MSP430FR2xx_4xx/eusci_a_uart.obj" "./driverlib/MSP430FR2xx_4xx/eusci_b_i2c.obj" "./driverlib/MSP430FR2xx_4xx/eusci_b_spi.obj" "./driverlib/MSP430FR2xx_4xx/framctl.obj" "./driverlib/MSP430FR2xx_4xx/gpio.obj" "./driverlib/MSP430FR2xx_4xx/lcd_e.obj" "./driverlib/MSP430FR2xx_4xx/mpy32.obj" "./driverlib/MSP430FR2xx_4xx/pmm.obj" "./driverlib/MSP430FR2xx_4xx/rtc.obj" "./driverlib/MSP430FR2xx_4xx/sac.obj" "./driverlib/MSP430FR2xx_4xx/sfr.obj" "./driverlib/MSP430FR2xx_4xx/sysctl.obj" "./driverlib/MSP430FR2xx_4xx/tia.obj" "./driverlib/MSP430FR2xx_4xx/timer_a.obj" "./driverlib/MSP430FR2xx_4xx/timer_b.obj" "./driverlib/MSP430FR2xx_4xx/tlv.obj" "./driverlib/MSP430FR2xx_4xx/wdt_a.obj" "../lnk_msp430fr2433.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "BlinkLED_MSP430FR2433_03.out"
+ 
+Building secondary target: "BlinkLED_MSP430FR2433_03.txt"
+Invoking: MSP430 Hex Utility
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off --ti_txt -o "BlinkLED_MSP430FR2433_03.txt"  "BlinkLED_MSP430FR2433_03.out" 
+Translating to TI-TXT format...
+   "BlinkLED_MSP430FR2433_03.out" .cinit ==> .cinit
+   "BlinkLED_MSP430FR2433_03.out" .const ==> .const
+   "BlinkLED_MSP430FR2433_03.out" .text ==> .text
+   "BlinkLED_MSP430FR2433_03.out" $fill000 ==> $fill000
+   "BlinkLED_MSP430FR2433_03.out" $fill001 ==> $fill001
+   "BlinkLED_MSP430FR2433_03.out" PORT2 ==> PORT2
+   "BlinkLED_MSP430FR2433_03.out" PORT1 ==> PORT1
+   "BlinkLED_MSP430FR2433_03.out" ADC ==> ADC
+   "BlinkLED_MSP430FR2433_03.out" USCI_B0 ==> USCI_B0
+   "BlinkLED_MSP430FR2433_03.out" USCI_A1 ==> USCI_A1
+   "BlinkLED_MSP430FR2433_03.out" USCI_A0 ==> USCI_A0
+   "BlinkLED_MSP430FR2433_03.out" WDT ==> WDT
+   "BlinkLED_MSP430FR2433_03.out" RTC ==> RTC
+   "BlinkLED_MSP430FR2433_03.out" TIMER3_A1 ==> TIMER3_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER3_A0 ==> TIMER3_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER2_A1 ==> TIMER2_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER2_A0 ==> TIMER2_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER1_A1 ==> TIMER1_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER1_A0 ==> TIMER1_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER0_A1 ==> TIMER0_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER0_A0 ==> TIMER0_A0
+   "BlinkLED_MSP430FR2433_03.out" UNMI ==> UNMI
+   "BlinkLED_MSP430FR2433_03.out" SYSNMI ==> SYSNMI
+   "BlinkLED_MSP430FR2433_03.out" .reset ==> .reset
+Finished building secondary target: "BlinkLED_MSP430FR2433_03.txt"
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIT'
+make -C BlinkLED_MSP430FR2433_03/Debug__TIH/ clean
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIH'
+rm -fr  "BlinkLED_MSP430FR2433_03.hex"  "BlinkLED_MSP430FR2433_03.out" 
+rm -fr "_bit_set.obj" "_cable_tester_mainloop_once.obj" "_delay_1ms.obj" "_delay_1s.obj" "_delay_1us.obj" "_i2c01_clk_to_0.obj" "_i2c01_clk_to_1.obj" "_i2c01_init.obj" "_i2c01_sda_to_0.obj" "_i2c01_sda_to_1.obj" "_i2c_expander01_check_sda1.obj" "_i2c_expander01_r1w0_6.obj" "_i2c_expander01_read6.obj" "_i2c_expander01_reset.obj" "_i2c_expander01_testLoop.obj" "_led_green_set_output.obj" "_led_green_toggle.obj" "_led_red_set_output.obj" "_led_red_toggle.obj" "_test001.obj" "_test002.obj" "_test003.obj" "_uart_p1_5_tx_only_init.obj" "_uart_p1_5_tx_only_put_hex.obj" "_uart_p1_5_tx_only_testloop.obj" "main.obj" "main_init.obj" "driverlib\MSP430FR2xx_4xx\adc.obj" "driverlib\MSP430FR2xx_4xx\crc.obj" "driverlib\MSP430FR2xx_4xx\cs.obj" "driverlib\MSP430FR2xx_4xx\ecomp.obj" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.obj" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.obj" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.obj" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.obj" "driverlib\MSP430FR2xx_4xx\framctl.obj" "driverlib\MSP430FR2xx_4xx\gpio.obj" 
+rm -fr "driverlib\MSP430FR2xx_4xx\lcd_e.obj" "driverlib\MSP430FR2xx_4xx\mpy32.obj" "driverlib\MSP430FR2xx_4xx\pmm.obj" "driverlib\MSP430FR2xx_4xx\rtc.obj" "driverlib\MSP430FR2xx_4xx\sac.obj" "driverlib\MSP430FR2xx_4xx\sfr.obj" "driverlib\MSP430FR2xx_4xx\sysctl.obj" "driverlib\MSP430FR2xx_4xx\tia.obj" "driverlib\MSP430FR2xx_4xx\timer_a.obj" "driverlib\MSP430FR2xx_4xx\timer_b.obj" "driverlib\MSP430FR2xx_4xx\tlv.obj" "driverlib\MSP430FR2xx_4xx\wdt_a.obj" 
+rm -fr "_bit_set.d" "_cable_tester_mainloop_once.d" "_delay_1ms.d" "_delay_1s.d" "_delay_1us.d" "_i2c01_clk_to_0.d" "_i2c01_clk_to_1.d" "_i2c01_init.d" "_i2c01_sda_to_0.d" "_i2c01_sda_to_1.d" "_i2c_expander01_check_sda1.d" "_i2c_expander01_r1w0_6.d" "_i2c_expander01_read6.d" "_i2c_expander01_reset.d" "_i2c_expander01_testLoop.d" "_led_green_set_output.d" "_led_green_toggle.d" "_led_red_set_output.d" "_led_red_toggle.d" "_test001.d" "_test002.d" "_test003.d" "_uart_p1_5_tx_only_init.d" "_uart_p1_5_tx_only_put_hex.d" "_uart_p1_5_tx_only_testloop.d" "main.d" "main_init.d" "driverlib\MSP430FR2xx_4xx\adc.d" "driverlib\MSP430FR2xx_4xx\crc.d" "driverlib\MSP430FR2xx_4xx\cs.d" "driverlib\MSP430FR2xx_4xx\ecomp.d" "driverlib\MSP430FR2xx_4xx\eusci_a_spi.d" "driverlib\MSP430FR2xx_4xx\eusci_a_uart.d" "driverlib\MSP430FR2xx_4xx\eusci_b_i2c.d" "driverlib\MSP430FR2xx_4xx\eusci_b_spi.d" "driverlib\MSP430FR2xx_4xx\framctl.d" "driverlib\MSP430FR2xx_4xx\gpio.d" "driverlib\MSP430FR2xx_4xx\lcd_e.d" "driverlib\MSP430FR2xx_4xx\mpy32.d" 
+rm -fr "driverlib\MSP430FR2xx_4xx\pmm.d" "driverlib\MSP430FR2xx_4xx\rtc.d" "driverlib\MSP430FR2xx_4xx\sac.d" "driverlib\MSP430FR2xx_4xx\sfr.d" "driverlib\MSP430FR2xx_4xx\sysctl.d" "driverlib\MSP430FR2xx_4xx\tia.d" "driverlib\MSP430FR2xx_4xx\timer_a.d" "driverlib\MSP430FR2xx_4xx\timer_b.d" "driverlib\MSP430FR2xx_4xx\tlv.d" "driverlib\MSP430FR2xx_4xx\wdt_a.d" 
+Finished clean
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIH'
+make -C BlinkLED_MSP430FR2433_03/Debug__TIH/ | tee log.b45m.txt
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIH'
+Building file: "../_bit_set.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_bit_set.d_raw"  "../_bit_set.c"
+Finished building: "../_bit_set.c"
+ 
+Building file: "../_cable_tester_mainloop_once.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_cable_tester_mainloop_once.d_raw"  "../_cable_tester_mainloop_once.c"
+Finished building: "../_cable_tester_mainloop_once.c"
+ 
+Building file: "../_delay_1ms.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1ms.d_raw"  "../_delay_1ms.c"
+Finished building: "../_delay_1ms.c"
+ 
+Building file: "../_delay_1s.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1s.d_raw"  "../_delay_1s.c"
+Finished building: "../_delay_1s.c"
+ 
+Building file: "../_delay_1us.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_delay_1us.d_raw"  "../_delay_1us.c"
+Finished building: "../_delay_1us.c"
+ 
+Building file: "../_i2c01_clk_to_0.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_clk_to_0.d_raw"  "../_i2c01_clk_to_0.c"
+Finished building: "../_i2c01_clk_to_0.c"
+ 
+Building file: "../_i2c01_clk_to_1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_clk_to_1.d_raw"  "../_i2c01_clk_to_1.c"
+Finished building: "../_i2c01_clk_to_1.c"
+ 
+Building file: "../_i2c01_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_init.d_raw"  "../_i2c01_init.c"
+Finished building: "../_i2c01_init.c"
+ 
+Building file: "../_i2c01_sda_to_0.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_sda_to_0.d_raw"  "../_i2c01_sda_to_0.c"
+Finished building: "../_i2c01_sda_to_0.c"
+ 
+Building file: "../_i2c01_sda_to_1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c01_sda_to_1.d_raw"  "../_i2c01_sda_to_1.c"
+Finished building: "../_i2c01_sda_to_1.c"
+ 
+Building file: "../_i2c_expander01_check_sda1.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_check_sda1.d_raw"  "../_i2c_expander01_check_sda1.c"
+Finished building: "../_i2c_expander01_check_sda1.c"
+ 
+Building file: "../_i2c_expander01_r1w0_6.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_r1w0_6.d_raw"  "../_i2c_expander01_r1w0_6.c"
+Finished building: "../_i2c_expander01_r1w0_6.c"
+ 
+Building file: "../_i2c_expander01_read6.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_read6.d_raw"  "../_i2c_expander01_read6.c"
+Finished building: "../_i2c_expander01_read6.c"
+ 
+Building file: "../_i2c_expander01_reset.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_reset.d_raw"  "../_i2c_expander01_reset.c"
+Finished building: "../_i2c_expander01_reset.c"
+ 
+Building file: "../_i2c_expander01_testLoop.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_i2c_expander01_testLoop.d_raw"  "../_i2c_expander01_testLoop.c"
+Finished building: "../_i2c_expander01_testLoop.c"
+ 
+Building file: "../_led_green_set_output.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_green_set_output.d_raw"  "../_led_green_set_output.c"
+Finished building: "../_led_green_set_output.c"
+ 
+Building file: "../_led_green_toggle.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_green_toggle.d_raw"  "../_led_green_toggle.c"
+Finished building: "../_led_green_toggle.c"
+ 
+Building file: "../_led_red_set_output.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_red_set_output.d_raw"  "../_led_red_set_output.c"
+Finished building: "../_led_red_set_output.c"
+ 
+Building file: "../_led_red_toggle.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_led_red_toggle.d_raw"  "../_led_red_toggle.c"
+Finished building: "../_led_red_toggle.c"
+ 
+Building file: "../_test001.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test001.d_raw"  "../_test001.c"
+Finished building: "../_test001.c"
+ 
+Building file: "../_test002.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test002.d_raw"  "../_test002.c"
+Finished building: "../_test002.c"
+ 
+Building file: "../_test003.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_test003.d_raw"  "../_test003.c"
+Finished building: "../_test003.c"
+ 
+Building file: "../_uart_p1_5_tx_only_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_init.d_raw"  "../_uart_p1_5_tx_only_init.c"
+Finished building: "../_uart_p1_5_tx_only_init.c"
+ 
+Building file: "../_uart_p1_5_tx_only_put_hex.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_put_hex.d_raw"  "../_uart_p1_5_tx_only_put_hex.c"
+Finished building: "../_uart_p1_5_tx_only_put_hex.c"
+ 
+Building file: "../_uart_p1_5_tx_only_testloop.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="_uart_p1_5_tx_only_testloop.d_raw"  "../_uart_p1_5_tx_only_testloop.c"
+Finished building: "../_uart_p1_5_tx_only_testloop.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../main_init.c"
+Invoking: MSP430 Compiler
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03" --include_path="/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/driverlib/MSP430FR2xx_4xx" --include_path="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main_init.d_raw"  "../main_init.c"
+Finished building: "../main_init.c"
+ 
+Building target: "BlinkLED_MSP430FR2433_03.out"
+Invoking: MSP430 Linker
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"BlinkLED_MSP430FR2433_03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include" -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/lib" -i"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" -i"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="BlinkLED_MSP430FR2433_03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "BlinkLED_MSP430FR2433_03.out" "./_bit_set.obj" "./_cable_tester_mainloop_once.obj" "./_delay_1ms.obj" "./_delay_1s.obj" "./_delay_1us.obj" "./_i2c01_clk_to_0.obj" "./_i2c01_clk_to_1.obj" "./_i2c01_init.obj" "./_i2c01_sda_to_0.obj" "./_i2c01_sda_to_1.obj" "./_i2c_expander01_check_sda1.obj" "./_i2c_expander01_r1w0_6.obj" "./_i2c_expander01_read6.obj" "./_i2c_expander01_reset.obj" "./_i2c_expander01_testLoop.obj" "./_led_green_set_output.obj" "./_led_green_toggle.obj" "./_led_red_set_output.obj" "./_led_red_toggle.obj" "./_test001.obj" "./_test002.obj" "./_test003.obj" "./_uart_p1_5_tx_only_init.obj" "./_uart_p1_5_tx_only_put_hex.obj" "./_uart_p1_5_tx_only_testloop.obj" "./main.obj" "./main_init.obj" "./driverlib/MSP430FR2xx_4xx/adc.obj" "./driverlib/MSP430FR2xx_4xx/crc.obj" "./driverlib/MSP430FR2xx_4xx/cs.obj" "./driverlib/MSP430FR2xx_4xx/ecomp.obj" "./driverlib/MSP430FR2xx_4xx/eusci_a_spi.obj" "./driverlib/MSP430FR2xx_4xx/eusci_a_uart.obj" "./driverlib/MSP430FR2xx_4xx/eusci_b_i2c.obj" "./driverlib/MSP430FR2xx_4xx/eusci_b_spi.obj" "./driverlib/MSP430FR2xx_4xx/framctl.obj" "./driverlib/MSP430FR2xx_4xx/gpio.obj" "./driverlib/MSP430FR2xx_4xx/lcd_e.obj" "./driverlib/MSP430FR2xx_4xx/mpy32.obj" "./driverlib/MSP430FR2xx_4xx/pmm.obj" "./driverlib/MSP430FR2xx_4xx/rtc.obj" "./driverlib/MSP430FR2xx_4xx/sac.obj" "./driverlib/MSP430FR2xx_4xx/sfr.obj" "./driverlib/MSP430FR2xx_4xx/sysctl.obj" "./driverlib/MSP430FR2xx_4xx/tia.obj" "./driverlib/MSP430FR2xx_4xx/timer_a.obj" "./driverlib/MSP430FR2xx_4xx/timer_b.obj" "./driverlib/MSP430FR2xx_4xx/tlv.obj" "./driverlib/MSP430FR2xx_4xx/wdt_a.obj" "../lnk_msp430fr2433.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "BlinkLED_MSP430FR2433_03.out"
+ 
+Building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+Invoking: MSP430 Hex Utility
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off --intel -o "BlinkLED_MSP430FR2433_03.hex"  "BlinkLED_MSP430FR2433_03.out" 
+Translating to Intel format...
+   "BlinkLED_MSP430FR2433_03.out" .cinit ==> .cinit
+   "BlinkLED_MSP430FR2433_03.out" .const ==> .const
+   "BlinkLED_MSP430FR2433_03.out" .text ==> .text
+   "BlinkLED_MSP430FR2433_03.out" $fill000 ==> $fill000
+   "BlinkLED_MSP430FR2433_03.out" $fill001 ==> $fill001
+   "BlinkLED_MSP430FR2433_03.out" PORT2 ==> PORT2
+   "BlinkLED_MSP430FR2433_03.out" PORT1 ==> PORT1
+   "BlinkLED_MSP430FR2433_03.out" ADC ==> ADC
+   "BlinkLED_MSP430FR2433_03.out" USCI_B0 ==> USCI_B0
+   "BlinkLED_MSP430FR2433_03.out" USCI_A1 ==> USCI_A1
+   "BlinkLED_MSP430FR2433_03.out" USCI_A0 ==> USCI_A0
+   "BlinkLED_MSP430FR2433_03.out" WDT ==> WDT
+   "BlinkLED_MSP430FR2433_03.out" RTC ==> RTC
+   "BlinkLED_MSP430FR2433_03.out" TIMER3_A1 ==> TIMER3_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER3_A0 ==> TIMER3_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER2_A1 ==> TIMER2_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER2_A0 ==> TIMER2_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER1_A1 ==> TIMER1_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER1_A0 ==> TIMER1_A0
+   "BlinkLED_MSP430FR2433_03.out" TIMER0_A1 ==> TIMER0_A1
+   "BlinkLED_MSP430FR2433_03.out" TIMER0_A0 ==> TIMER0_A0
+   "BlinkLED_MSP430FR2433_03.out" UNMI ==> UNMI
+   "BlinkLED_MSP430FR2433_03.out" SYSNMI ==> SYSNMI
+   "BlinkLED_MSP430FR2433_03.out" .reset ==> .reset
+Finished building secondary target: "BlinkLED_MSP430FR2433_03.hex"
+ 
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/workspace_v10/BlinkLED_MSP430FR2433_03/Debug__TIH'
