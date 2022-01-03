@@ -1,5 +1,5 @@
 
-tHelp:= using gcc9.3.1 from ti     , with ccs\'s library
+tHelp:= using gcc9.3.1 from ti     , with ccs's library'
 tName:=tt1
 
 uname_p:=$(shell uname -p)

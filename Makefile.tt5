@@ -1,6 +1,6 @@
 
 tName:=tt5
-tHelp:= trying to make the old H3D's prog being run in ARM
+tHelp:= trying to make the old H3D's prog being run in ARM'
 
 include ../Makefile.msp430v001
 
