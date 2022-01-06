@@ -1,4 +1,4 @@
-make[1]: Entering directory '/home/sdb3/rw/home/dyn/tesT03/tt3'
+make[1]: Entering directory '/home/sdb3/rw/home/dyn/tesT03/tt4'
 
 srcC9 -> ../src01/_test002.c ../src01/_i2c01_clk_to_1.c ../src01/_i2c01_sda_to_1.c ../src01/_delay_1s.c ../src01/_uart_p1_5_tx_only_init.c ../src01/_led_red_toggle.c ../src01/_uart_p1_5_tx_only_put_hex.c ../src01/_i2c01_init.c ../src01/_i2c_expander01_check_sda1.c ../src01/_led_red_set_output.c ../src01/_delay_1ms.c ../src01/_test003.c ../src01/main_init.c ../src01/_i2c_expander01_testLoop.c ../src01/_led_green_set_output.c ../src01/_uart_p1_5_tx_only_testloop.c ../src01/main.c ../src01/_delay_1us.c ../src01/_test001.c ../src01/_i2c_expander01_r1w0_6.c ../src01/_i2c_expander01_read6.c ../src01/_i2c_expander01_reset.c ../src01/_i2c01_clk_to_0.c ../src01/_led_green_toggle.c ../src01/_cable_tester_mainloop_once.c ../src01/_i2c01_sda_to_0.c ../src01/_bit_set.c
 srcH9 -> ../h01/_led_all.h ../h01/_delay_all.h ../h01/_include_all.h ../h01/_uart_p1_5_tx_only.h ../h01/_i2c01.h ../h01/_test.h ../h01/_bit_set.h ../h01/_i2c_expander01.h ../h01/_cable_tester.h ../h02/_clk_init.h ../h02/_gpio_init.h ../h02/_bit_set.h
@@ -6,19 +6,10 @@ dirC9 -> ../src01
 dirH9 -> ../h01 ../h02
 
 
-/usr/bin/msp430-gcc-4.6.3  -mmcu=msp430fr2433   -O3 -g -gdwarf-3 -gstrict-dwarf -Wall  -MD -MP  -nostartfiles   -T"x_msp430fr2433__energia.ld"  -Wl,--gc-sections                            ../src01/_test002.c ../src01/_i2c01_clk_to_1.c ../src01/_i2c01_sda_to_1.c ../src01/_delay_1s.c ../src01/_uart_p1_5_tx_only_init.c ../src01/_led_red_toggle.c ../src01/_uart_p1_5_tx_only_put_hex.c ../src01/_i2c01_init.c ../src01/_i2c_expander01_check_sda1.c ../src01/_led_red_set_output.c ../src01/_delay_1ms.c ../src01/_test003.c ../src01/main_init.c ../src01/_i2c_expander01_testLoop.c ../src01/_led_green_set_output.c ../src01/_uart_p1_5_tx_only_testloop.c ../src01/main.c ../src01/_delay_1us.c ../src01/_test001.c ../src01/_i2c_expander01_r1w0_6.c ../src01/_i2c_expander01_read6.c ../src01/_i2c_expander01_reset.c ../src01/_i2c01_clk_to_0.c ../src01/_led_green_toggle.c ../src01/_cable_tester_mainloop_once.c ../src01/_i2c01_sda_to_0.c ../src01/_bit_set.c   -I../h01  -I../h02    -I../xh_tt3/  -L../xl_tt3/                     -Wl,-Map,"tt3.map"  -o"tt3.out.elf"   -MF"tt3.d_raw"                                                           -Dtt3
-/usr/lib/gcc/msp430/4.6.3/../../../../msp430/bin/ld:x_msp430fr2433__energia.ld:629: warning: memory region `RESETVEC' not declared
-"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded tt3.out.elf tt3.ss.elf
-"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off --ti_txt -o "tt3.ti.txt" "tt3.out.elf"  
-Translating to TI-TXT format...
-   "tt3.out.elf" .text ==> .text
-   "tt3.out.elf" .rodata ==> .rodata
-   "tt3.out.elf" .data ==> .data
-
--rw-rw-r-- 1 dyn dyn   953 Jan  6 11:27 /home/sdb3/rw/home/dyn/tesT03/tt3/tt3.d_raw
--rw-rw-r-- 1 dyn dyn 60033 Jan  6 11:27 /home/sdb3/rw/home/dyn/tesT03/tt3/tt3.map
--rwxrwxr-x 1 dyn dyn 45402 Jan  6 11:27 /home/sdb3/rw/home/dyn/tesT03/tt3/tt3.out.elf
--rwxrwxr-x 1 dyn dyn  8940 Jan  6 11:27 /home/sdb3/rw/home/dyn/tesT03/tt3/tt3.ss.elf
--rw-rw-r-- 1 dyn dyn 26181 Jan  6 11:27 /home/sdb3/rw/home/dyn/tesT03/tt3/tt3.ti.txt
-
-make[1]: Leaving directory '/home/sdb3/rw/home/dyn/tesT03/tt3'
+/home/m430/x64/local/bin/msp430-elf-gcc  -mmcu=msp430fr2433   -O3 -g -gdwarf-3 -gstrict-dwarf -Wall  -MD -MP    -T"msp430.x"  -Wl,--gc-sections   -Wl,--start-group -lgcc -lc -Wl,--end-group                          ../src01/_test002.c ../src01/_i2c01_clk_to_1.c ../src01/_i2c01_sda_to_1.c ../src01/_delay_1s.c ../src01/_uart_p1_5_tx_only_init.c ../src01/_led_red_toggle.c ../src01/_uart_p1_5_tx_only_put_hex.c ../src01/_i2c01_init.c ../src01/_i2c_expander01_check_sda1.c ../src01/_led_red_set_output.c ../src01/_delay_1ms.c ../src01/_test003.c ../src01/main_init.c ../src01/_i2c_expander01_testLoop.c ../src01/_led_green_set_output.c ../src01/_uart_p1_5_tx_only_testloop.c ../src01/main.c ../src01/_delay_1us.c ../src01/_test001.c ../src01/_i2c_expander01_r1w0_6.c ../src01/_i2c_expander01_read6.c ../src01/_i2c_expander01_reset.c ../src01/_i2c01_clk_to_0.c ../src01/_led_green_toggle.c ../src01/_cable_tester_mainloop_once.c ../src01/_i2c01_sda_to_0.c ../src01/_bit_set.c   -I../h01  -I../h02    -I../xh_tt4/  -L../xl_tt4/                     -Wl,-Map,"tt4.map"  -o"tt4.out.elf"   -MF"tt4.d_raw"                          -Dtt4
+"/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-objcopy" --strip-all --strip-debug --strip-unneeded tt4.out.elf tt4.ss.elf
+"/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off --ti_txt -o "tt4.ti.txt" "tt4.out.elf"  
+fatal error: no initialized sections in input files
+/home/sdb3/rw/home/dyn/tesT03/Makefile.tt4:133: recipe for target 'tt4' failed
+make[1]: *** [tt4] Error 1
+make[1]: Leaving directory '/home/sdb3/rw/home/dyn/tesT03/tt4'
