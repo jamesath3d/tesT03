@@ -15,9 +15,9 @@ Translating to TI-TXT format...
    "tt1.out.elf" .data ==> .data
    "tt1.out.elf" __reset_vector ==> __reset_vector
 
--rw-rw-r-- 1 dyn dyn  94284 Jan  6 11:25 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.map
--rwxrwxr-x 1 dyn dyn 118952 Jan  6 11:25 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.out.elf
--rwxrwxr-x 1 dyn dyn   5696 Jan  6 11:25 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.ss.elf
--rw-rw-r-- 1 dyn dyn  14609 Jan  6 11:25 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.ti.txt
+-rw-rw-r-- 1 dyn dyn  94284 Jan  6 11:26 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.map
+-rwxrwxr-x 1 dyn dyn 118952 Jan  6 11:26 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.out.elf
+-rwxrwxr-x 1 dyn dyn   5696 Jan  6 11:26 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.ss.elf
+-rw-rw-r-- 1 dyn dyn  14609 Jan  6 11:26 /home/sdb3/rw/home/dyn/tesT03/tt1/tt1.ti.txt
 
 make[1]: Leaving directory '/home/sdb3/rw/home/dyn/tesT03/tt1'
