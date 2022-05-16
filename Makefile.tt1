@@ -30,7 +30,7 @@ dirH9:=$(shell dirname $(srcH9)|sort -u)
 
 #msp430gccOP4:="./_bit_set.o" "./_cable_tester_mainloop_once.o" "./_delay_1ms.o" "./_delay_1s.o" "./_delay_1us.o" "./_i2c01_clk_to_0.o" "./_i2c01_clk_to_1.o" "./_i2c01_init.o" "./_i2c01_sda_to_0.o" "./_i2c01_sda_to_1.o" "./_i2c_expander01_check_sda1.o" "./_i2c_expander01_r1w0_6.o" "./_i2c_expander01_read6.o" "./_i2c_expander01_reset.o" "./_i2c_expander01_testLoop.o" "./_led_green_set_output.o" "./_led_green_toggle.o" "./_led_red_set_output.o" "./_led_red_toggle.o" "./_test001.o" "./_test002.o" "./_test003.o" "./_uart_p1_5_tx_only_init.o" "./_uart_p1_5_tx_only_put_hex.o" "./_uart_p1_5_tx_only_testloop.o" "./main.o" "./main_init.o" "./driverlib/MSP430FR2xx_4xx/adc.o" "./driverlib/MSP430FR2xx_4xx/crc.o" "./driverlib/MSP430FR2xx_4xx/cs.o" "./driverlib/MSP430FR2xx_4xx/ecomp.o" "./driverlib/MSP430FR2xx_4xx/eusci_a_spi.o" "./driverlib/MSP430FR2xx_4xx/eusci_a_uart.o" "./driverlib/MSP430FR2xx_4xx/eusci_b_i2c.o" "./driverlib/MSP430FR2xx_4xx/eusci_b_spi.o" "./driverlib/MSP430FR2xx_4xx/framctl.o" "./driverlib/MSP430FR2xx_4xx/gpio.o" "./driverlib/MSP430FR2xx_4xx/lcd_e.o" "./driverlib/MSP430FR2xx_4xx/mpy32.o" "./driverlib/MSP430FR2xx_4xx/pmm.o" "./driverlib/MSP430FR2xx_4xx/rtc.o" "./driverlib/MSP430FR2xx_4xx/sac.o" "./driverlib/MSP430FR2xx_4xx/sfr.o" "./driverlib/MSP430FR2xx_4xx/sysctl.o" "./driverlib/MSP430FR2xx_4xx/tia.o" "./driverlib/MSP430FR2xx_4xx/timer_a.o" "./driverlib/MSP430FR2xx_4xx/timer_b.o" "./driverlib/MSP430FR2xx_4xx/tlv.o" "./driverlib/MSP430FR2xx_4xx/wdt_a.o" -T"../msp430fr2433.ld"  
 msp430gccOP0:="/home/ti/ti/ccs1040/ccs/tools/compiler/msp430-gcc-9.3.1.11_linux64/bin/msp430-elf-gcc-9.3.1" 
-msp430gccOP1=-Wl,-Map,"$@.map" -o"$@.out.elf"
+msp430gccOP1=-Wl,-Map,"$@.map" -o"$@.out.elf" -Werror
 msp430gccOP2:=-mhwmult=f5series -Og -g -gdwarf-3 -gstrict-dwarf -Wall -mmcu=msp430fr2433 
 msp430gccOP3:=-Wl,--gc-sections 
 msp430gccOP4X=-L"/home/ti/ti/ccs1040/ccs/ccs_base/msp430/include_gcc" 
@@ -76,10 +76,16 @@ msp430objcopyCMD=     \
 msp430txt1:="/home/ti/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/hex430"
 msp430txt3:=--memwidth=8 --romwidth=8 --diag_wrap=off --ti_txt -o
 msp430txt5="$@.ti.txt" "$@.out.elf" 
+msp430txt6="$@.ti.ss.txt" "$@.ss.elf" 
 msp430txtCMD=\
 			 $(msp430txt1) \
 			 $(msp430txt3) \
 			 $(msp430txt5) \
+
+msp430txtCM2=\
+			 $(msp430txt1) \
+			 $(msp430txt3) \
+			 $(msp430txt6) \
 
 
 define helpText2
@@ -101,5 +107,6 @@ $(tName):
 	$(msp430cmd)
 	$(msp430objcopyCMD)
 	$(msp430txtCMD)
+	$(msp430txtCM2)
 	@echo && ls -l $${PWD}/$@.* && echo
 
